@@ -2,91 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certified | Training, Education Consultancy</title>
-    <meta name="description" content="Certified | Training, Education &amp; Consultancy" />
-    <meta name="keywords"
-        content="training, education, consultancy, certified, professional development, courses, degrees, Egypt" />
-    <meta name="author" content="Certified Education Consultancy" />
-
-    <meta property="og:title" content="Certified | Training, Education Consultancy" />
-    <meta property="og:description" content="Certified | Training, Education &amp; Consultancy" />
-    <meta property="og:image" content="https://www.yourwebsite.com/path/to/certified-share-image.jpg" />
-    <meta property="og:url" content="https://www.yourwebsite.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Certified | Training, Education Consultancy" />
-    <meta name="twitter:description" content="Certified | Training, Education &amp; Consultancy" />
-    <meta name="twitter:image" content="https://www.yourwebsite.com/path/to/certified-twitter-image.jpg" />
-    <meta name="twitter:creator" content="@Certified_Edu" />
-    <link rel="icon" href="./img/favicon.ico" sizes="any" />
-    <link rel="icon" href="./img/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
-    <link rel="manifest" href="./site.webmanifest" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+        :root {
+          /* Define your custom colors using CSS variables */
+          --color-primary: #1a202c; /* A dark almost black for primary text */
+          --color-accent-green: #34d399; /* A vibrant green for accents */
+          --color-accent-blue: #3b82f6; /* A vibrant blue for accents */
+          --color-accent-white: #f3f4f6; /* A light gray for subtle accents */
+        }
+      }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#233d4a",
+                        accent: "#F59E0B",
+                        "accent-blue": "#1887b5",
+                        "accent-green": "#57a67d",
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
+    <style>
+        body {
+            font-family: "Outfit", sans-serif;
+        }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        .floating-dots {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px);
+            background-size: 50px 50px;
+            animation: float 6s linear infinite;
+            opacity: 0.7;
+        }
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+        @keyframes float {
+            0% {
+                background-position: 0 0;
+            }
 
-    <link href="./styles/index.css" rel="stylesheet">
-    <link href="./styles/swiper.css" rel="stylesheet">
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+    </style>
+
 </head>
 
-<body dir="rtl" lang="ar" class="noto_kufi_arabic" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1240.0"
-    data-gr-ext-installed="">
+<body dir="rtl" lang="ar" class="noto_kufi_arabic_e01854e1-module__oCSy2a__variable" cz-shortcut-listen="true"
+    data-new-gr-c-s-check-loaded="14.1240.0" data-gr-ext-installed="">
     <header class="bg-white py-4 sticky top-0 z-50 shadow-sm ltr">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <div class="flex items-center justify-between">
                 <a href="./index.html">
-                    <img src="./img/logo.webp" class="h-10" alt="Logo" />
+                    <img src="./img/logo.webp" class="h-14" />
                 </a>
                 <nav class="hidden lg:flex items-center space-x-8">
                     <div class="relative group">
                         <button
                             class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
-                            البرامج الأكاديمية
-                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                            Academic Programs
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 ml-1">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
                         </button>
                         <div
                             class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
                             <div class="p-2">
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-book-open h-4 w-4 text-accent-blue mr-2"></i>MBA
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-book-open h-4 w-4 text-accent-blue mr-2">
+                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                    </svg>MBA
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-graduation-cap h-4 w-4 text-accent-blue mr-2"></i>PhD
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-graduation-cap h-4 w-4 text-accent-blue mr-2">
+                                        <path
+                                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                        </path>
+                                        <path d="M22 10v6"></path>
+                                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                    </svg>PhD
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-scroll-text h-4 w-4 text-accent-blue mr-2"></i>MSc
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-scroll-text h-4 w-4 text-accent-blue mr-2">
+                                        <path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4">
+                                        </path>
+                                        <path d="M19 17V5a2 2 0 0 0-2-2H4"></path>
+                                        <path d="M15 8h-5"></path>
+                                        <path d="M15 12h-5"></path>
+                                    </svg>MSc
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-award h-4 w-4 text-accent-blue mr-2"></i>DBA
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-award h-4 w-4 text-accent-blue mr-2">
+                                        <circle cx="12" cy="8" r="6"></circle>
+                                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                    </svg>DBA
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-book-open-reader h-4 w-4 text-accent-blue mr-2"></i>Bachelor
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-book-open-check h-4 w-4 text-accent-blue mr-2">
+                                        <path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z"></path>
+                                        <path d="m16 12 2 2 4-4"></path>
+                                        <path d="M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3"></path>
+                                    </svg>Bachelor
                                 </a>
                             </div>
                         </div>
@@ -94,23 +153,52 @@
                     <div class="relative group">
                         <button
                             class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
-                            الدورات
-                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                            Courses
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 ml-1">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
                         </button>
                         <div
                             class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
                             <div class="p-2">
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-clipboard-check h-4 w-4 text-accent-blue mr-2"></i>PMP
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-clipboard-check h-4 w-4 text-accent-blue mr-2">
+                                        <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                                        <path
+                                            d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                        </path>
+                                        <path d="m9 14 2 2 4-4"></path>
+                                    </svg>PMP
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-chart-bar h-4 w-4 text-accent-blue mr-2"></i>PMO
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-bar-chart3 h-4 w-4 text-accent-blue mr-2">
+                                        <path d="M3 3v18h18"></path>
+                                        <path d="M18 17V9"></path>
+                                        <path d="M13 17V5"></path>
+                                        <path d="M8 17v-3"></path>
+                                    </svg>PMO
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-book-atlas h-4 w-4 text-accent-blue mr-2"></i>Other Courses
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-library h-4 w-4 text-accent-blue mr-2">
+                                        <path d="m16 6 4 14"></path>
+                                        <path d="M12 6v14"></path>
+                                        <path d="M8 8v12"></path>
+                                        <path d="M4 4v16"></path>
+                                    </svg>Other Courses
                                 </a>
                             </div>
                         </div>
@@ -118,27 +206,59 @@
                     <div class="relative group">
                         <button
                             class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
-                            المزيد
-                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                            More
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 ml-1">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
                         </button>
                         <div
                             class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
                             <div class="p-2">
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-file-lines h-4 w-4 text-accent-blue mr-2"></i>Blog
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-file-text h-4 w-4 text-accent-blue mr-2">
+                                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                                        <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                        <path d="M10 9H8"></path>
+                                        <path d="M16 13H8"></path>
+                                        <path d="M16 17H8"></path>
+                                    </svg>Blog
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-bookmark h-4 w-4 text-accent-blue mr-2"></i>Books
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-book-marked h-4 w-4 text-accent-blue mr-2">
+                                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                                        <polyline points="10 2 10 10 13 7 16 10 16 2"></polyline>
+                                    </svg>Books
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-video h-4 w-4 text-accent-blue mr-2"></i>Video
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-video h-4 w-4 text-accent-blue mr-2">
+                                        <path d="m22 8-6 4 6 4V8Z"></path>
+                                        <rect width="14" height="12" x="2" y="6" rx="2" ry="2"></rect>
+                                    </svg>Video
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-circle-info h-4 w-4 text-accent-blue mr-2"></i>About
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-info h-4 w-4 text-accent-blue mr-2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M12 16v-4"></path>
+                                        <path d="M12 8h.01"></path>
+                                    </svg>About
                                 </a>
                             </div>
                         </div>
@@ -146,7 +266,13 @@
                     <div class="relative group">
                         <button
                             class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
-                            <i class="fa-solid fa-phone h-4 w-4 text-accent-blue mr-2"></i>تواصل معنا
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 text-accent-blue mr-2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>Contact Us
                         </button>
                     </div>
                 </nav>
@@ -154,11 +280,22 @@
                     <div class="relative">
                         <button class="p-2 hover:bg-accent-blue/10 rounded-full transition-colors"
                             aria-label="Open search">
-                            <i class="fa-solid fa-magnifying-glass h-5 w-5 text-accent-blue"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-search h-5 w-5 text-accent-blue">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
                         </button>
                     </div>
                     <button class="p-2 hover:bg-gray-100 rounded-full" aria-label="Switch to Arabic">
-                        <i class="fa-solid fa-globe h-5 w-5 text-primary"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-globe h-5 w-5 text-primary">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
                     </button>
                     <button
                         class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10">Login</button>
@@ -166,124 +303,230 @@
                         class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md">Sign
                         Up</button>
                 </div>
-                <div id="mobile-menu-button" class="lg:hidden">
-                    <button id="mobile-menu-toggle" class="text-primary p-2" aria-label="Toggle Menu">
-                        <i class="fa-solid fa-bars h-6 w-6"></i>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-primary p-2" aria-label="Toggle Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-menu h-6 w-6">
+                            <line x1="4" x2="20" y1="12" y2="12"></line>
+                            <line x1="4" x2="20" y1="6" y2="6"></line>
+                            <line x1="4" x2="20" y1="18" y2="18"></line>
+                        </svg>
                     </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="lg:hidden pt-4 pb-6 px-4 bg-white border-t mt-4 text-left hidden">
+                <nav class="flex flex-col space-y-4">
+                    <div class="mb-4">
+                        <button
+                            class="flex items-center space-x-2 px-3 py-2 bg-white/10 hover:bg-white/20 rounded-md transition-colors"
+                            aria-label="Switch to Arabic">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-globe h-4 w-4">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                            <span>العربية</span>
+                        </button>
+                    </div>
+                    <div class="mb-4">
+                        <div class="relative">
+                            <button class="p-2 hover:bg-accent-blue/10 rounded-full transition-colors"
+                                aria-label="Open search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-search h-5 w-5 text-accent-blue">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.3-4.3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="flex items-center justify-between w-full py-2 text-primary font-medium toggle-submenu">
+                            <div class="flex items-center">Academic Programs</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="ml-4 mt-1 space-y-1 hidden submenu">
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-book-open h-4 w-4 text-accent-blue mr-2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>MBA
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-graduation-cap h-4 w-4 text-accent-blue mr-2">
+                                    <path
+                                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                    </path>
+                                    <path d="M22 10v6"></path>
+                                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                                </svg>PhD
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-scroll-text h-4 w-4 text-accent-blue mr-2">
+                                    <path d="M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4"></path>
+                                    <path d="M19 17V5a2 2 0 0 0-2-2H4"></path>
+                                    <path d="M15 8h-5"></path>
+                                    <path d="M15 12h-5"></path>
+                                </svg>MSc
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-award h-4 w-4 text-accent-blue mr-2">
+                                    <circle cx="12" cy="8" r="6"></circle>
+                                    <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                </svg>DBA
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-book-open-check h-4 w-4 text-accent-blue mr-2">
+                                    <path d="M8 3H2v15h7c1.7 0 3 1.3 3 3V7c0-2.2-1.8-4-4-4Z"></path>
+                                    <path d="m16 12 2 2 4-4"></path>
+                                    <path d="M22 6V3h-6c-2.2 0-4 1.8-4 4v14c0-1.7 1.3-3 3-3h7v-2.3"></path>
+                                </svg>Bachelor
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="flex items-center justify-between w-full py-2 text-primary font-medium toggle-submenu">
+                            <div class="flex items-center">Courses</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="ml-4 mt-1 space-y-1 hidden submenu">
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-clipboard-check h-4 w-4 text-accent-blue mr-2">
+                                    <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2">
+                                    </path>
+                                    <path d="m9 14 2 2 4-4"></path>
+                                </svg>PMP
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-bar-chart3 h-4 w-4 text-accent-blue mr-2">
+                                    <path d="M3 3v18h18"></path>
+                                    <path d="M18 17V9"></path>
+                                    <path d="M13 17V5"></path>
+                                    <path d="M8 17v-3"></path>
+                                </svg>PMO
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-library h-4 w-4 text-accent-blue mr-2">
+                                    <path d="m16 6 4 14"></path>
+                                    <path d="M12 6v14"></path>
+                                    <path d="M8 8v12"></path>
+                                    <path d="M4 4v16"></path>
+                                </svg>Other Courses
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <button
+                            class="flex items-center justify-between w-full py-2 text-primary font-medium toggle-submenu">
+                            <div class="flex items-center">More</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4">
+                                <path d="m6 9 6 6 6-6"></path>
+                            </svg>
+                        </button>
+                        <div class="ml-4 mt-1 space-y-1 hidden submenu">
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-file-text h-4 w-4 text-accent-blue mr-2">
+                                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                                    <path d="M10 9H8"></path>
+                                    <path d="M16 13H8"></path>
+                                    <path d="M16 17H8"></path>
+                                </svg>Blog
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-book-marked h-4 w-4 text-accent-blue mr-2">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+                                    <polyline points="10 2 10 10 13 7 16 10 16 2"></polyline>
+                                </svg>Books
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-video h-4 w-4 text-accent-blue mr-2">
+                                    <path d="m22 8-6 4 6 4V8Z"></path>
+                                    <rect width="14" height="12" x="2" y="6" rx="2" ry="2"></rect>
+                                </svg>Video
+                            </a>
+                            <a href="#" class="flex items-center py-1 px-2 text-sm text-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-info h-4 w-4 text-accent-blue mr-2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 16v-4"></path>
+                                    <path d="M12 8h.01"></path>
+                                </svg>About
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="flex items-center justify-between w-full py-2 text-primary font-medium">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone h-4 w-4 text-accent-blue mr-2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>Contact Us
+                            </div>
+                        </button>
+                    </div>
+                </nav>
+                <div class="flex space-x-4 mt-6">
+                    <button
+                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10 flex-1">Login</button>
+                    <button
+                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md flex-1">Sign
+                        Up</button>
                 </div>
             </div>
         </div>
     </header>
-
-    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden lg:hidden"></div>
-
-    <div id="mobile-menu-drawer"
-        class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden">
-        <div class="p-4">
-            <div class="flex justify-end">
-                <button id="close-mobile-menu" class="text-primary p-2">
-                    <i class="fa-solid fa-times h-6 w-6"></i>
-                </button>
-            </div>
-            <nav class="flex flex-col space-y-4 mt-4">
-                <div class="relative">
-                    <button id="academic-programs-mobile-toggle"
-                        class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
-                        Academic Programs
-                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
-                    </button>
-                    <div id="academic-programs-mobile-dropdown" class="pl-4 hidden">
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-book-open h-4 w-4 text-accent-blue mr-2"></i>MBA
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-graduation-cap h-4 w-4 text-accent-blue mr-2"></i>PhD
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-scroll-text h-4 w-4 text-accent-blue mr-2"></i>MSc
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-award h-4 w-4 text-accent-blue mr-2"></i>DBA
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-book-open-reader h-4 w-4 text-accent-blue mr-2"></i>Bachelor
-                        </a>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <button id="courses-mobile-toggle"
-                        class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
-                        Courses
-                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
-                    </button>
-                    <div id="courses-mobile-dropdown" class="pl-4 hidden">
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-clipboard-check h-4 w-4 text-accent-blue mr-2"></i>PMP
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-chart-bar h-4 w-4 text-accent-blue mr-2"></i>PMO
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-book-atlas h-4 w-4 text-accent-blue mr-2"></i>Other Courses
-                        </a>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <button id="more-mobile-toggle"
-                        class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
-                        More
-                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
-                    </button>
-                    <div id="more-mobile-dropdown" class="pl-4 hidden">
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-file-lines h-4 w-4 text-accent-blue mr-2"></i>Blog
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-bookmark h-4 w-4 text-accent-blue mr-2"></i>Books
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-video h-4 w-4 text-accent-blue mr-2"></i>Video
-                        </a>
-                        <a href="#"
-                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-circle-info h-4 w-4 text-accent-blue mr-2"></i>About
-                        </a>
-                    </div>
-                </div>
-                <a href="#"
-                    class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors py-2">
-                    <i class="fa-solid fa-phone h-4 w-4 text-accent-blue mr-2"></i>تواصل معنا
-                </a>
-                <button class="flex items-center text-primary hover:bg-gray-100 rounded-md py-2">
-                    <i class="fa-solid fa-magnifying-glass h-5 w-5 text-accent-blue mr-2"></i>Search
-                </button>
-                <button class="flex items-center text-primary hover:bg-gray-100 rounded-md py-2"
-                    aria-label="Switch to Arabic">
-                    <i class="fa-solid fa-globe h-5 w-5 text-primary mr-2"></i>Switch to Arabic
-                </button>
-                <button
-                    class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10 w-full mt-4">Login</button>
-                <button
-                    class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md w-full">Sign
-                    Up</button>
-            </nav>
-        </div>
-    </div>
-
-
     <main>
         <section class="relative bg-primary pt-16 pb-24 lg:py-0 lg:min-h-[85vh] flex items-center overflow-hidden">
             <div class="absolute inset-0 overflow-hidden">
@@ -1164,140 +1407,159 @@
                 <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
                     <div
                         class="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-accent-blue/10 mb-4 sm:mb-6">
-                        <i class="fas fa-award h-7 w-7 sm:h-8 sm:w-8 text-accent-blue" aria-hidden="true"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-award h-7 w-7 sm:h-8 sm:w-8 text-accent-blue" aria-hidden="true">
+                            <path
+                                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                            </path>
+                            <circle cx="12" cy="8" r="6"></circle>
+                        </svg>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-3 font-arabic">اعتماداتنا وشراكاتنا</h2>
-                    <p class="text-gray-600 text-base sm:text-lg font-arabic">
-                        نتعاون مع المؤسسات الرائدة عالمياً لضمان أن برامجنا تلبي المعايير الدولية وتوفر مؤهلات معترف بها
-                        عالمياً.
-                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-3">اعتماداتنا وشراكاتنا</h2>
+                    <p class="text-gray-600 text-base sm:text-lg"> <!-- -->نتعاون مع المؤسسات الرائدة عالمياً لضمان أن
+                        برامجنا تلبي المعايير الدولية وتوفر مؤهلات معترف بها عالمياً.</p>
                 </div>
-
                 <div class="relative">
-                    <div class="swiper myPartnersSwiper">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl mySwiper swiper-backface-hidden"
+                        dir="rtl">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide pb-10">
+                            <div class="swiper-slide swiper-slide-active pb-10"
+                                style="height: 100%; width: 392px; margin-left: 20px;">
                                 <div
                                     class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center h-32 text-center transform transition-transform duration-300 hover:scale-105">
-                                    <img alt="جامعة يوكلان" loading="lazy" width="60" height="60" decoding="async"
-                                        class="object-contain"
-                                        src="https://www.professionalengineers.us/uploads/partners/source/62582.webp" />
-                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1 font-arabic">
-                                        جامعة يوكلان</p>
+                                    <img alt="" loading="lazy" width="60" height="60" decoding="async" data-nimg="1"
+                                        class="object-cover" style="color:transparent"
+                                        srcset="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F62582.webp&amp;w=64&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F62582.webp&amp;w=128&amp;q=75 2x"
+                                        src="./img/photo/pexels-photo-8199561.jpeg" />
+                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1">جامعة يوكلان</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide pb-10">
+                            <div class="swiper-slide swiper-slide-next pb-10"
+                                style="height: 100%; width: 392px; margin-left: 20px;">
                                 <div
                                     class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center h-32 text-center transform transition-transform duration-300 hover:scale-105">
-                                    <img alt="جامعة الادارة والعلوم" loading="lazy" width="60" height="60"
-                                        decoding="async" class="object-contain"
-                                        src="https://www.professionalengineers.us/uploads/partners/source/79427.webp">
-                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1 font-arabic">
-                                        جامعة الادارة والعلوم</p>
+                                    <img alt="" loading="lazy" width="60" height="60" decoding="async" data-nimg="1"
+                                        class="object-cover" style="color:transparent"
+                                        srcset="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F79427.webp&amp;w=64&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F79427.webp&amp;w=128&amp;q=75 2x"
+                                        src="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F79427.webp&amp;w=128&amp;q=75">
+                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1">جامعة الادارة
+                                        والعلوم</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide pb-10">
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
                                 <div
                                     class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center h-32 text-center transform transition-transform duration-300 hover:scale-105">
-                                    <img alt="جامعة ويندسور الامريكية" loading="lazy" width="60" height="60"
-                                        decoding="async" class="object-contain"
-                                        src="https://www.professionalengineers.us/uploads/partners/source/63456.webp">
-                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1 font-arabic">
-                                        جامعة ويندسور الامريكية</p>
+                                    <img alt="" loading="lazy" width="60" height="60" decoding="async" data-nimg="1"
+                                        class="object-cover" style="color:transparent"
+                                        srcset="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F63456.webp&amp;w=64&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F63456.webp&amp;w=128&amp;q=75 2x"
+                                        src="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F63456.webp&amp;w=128&amp;q=75">
+                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1">جامعة ويندسور
+                                        الامريكية</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide pb-10">
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
                                 <div
                                     class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center h-32 text-center transform transition-transform duration-300 hover:scale-105">
-                                    <img alt="جامعة المدينة العالمية" loading="lazy" width="60" height="60"
-                                        decoding="async" class="object-contain"
-                                        src="https://www.professionalengineers.us/uploads/partners/source/17454.webp">
-                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1 font-arabic">
-                                        جامعة المدينة العالمية</p>
+                                    <img alt="" loading="lazy" width="60" height="60" decoding="async" data-nimg="1"
+                                        class="object-cover" style="color:transparent"
+                                        srcset="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F17454.webp&amp;w=64&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F17454.webp&amp;w=128&amp;q=75 2x"
+                                        src="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F17454.webp&amp;w=128&amp;q=75">
+                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1">جامعة المدينة
+                                        العالمية</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide pb-10">
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
                                 <div
                                     class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center h-32 text-center transform transition-transform duration-300 hover:scale-105">
-                                    <img alt="جامعة أنجليا رسكن" loading="lazy" width="60" height="60" decoding="async"
-                                        class="object-contain"
-                                        src="https://www.professionalengineers.us/uploads/partners/source/52178.webp">
-                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1 font-arabic">
-                                        جامعة أنجليا رسكن</p>
+                                    <img alt="" loading="lazy" width="60" height="60" decoding="async" data-nimg="1"
+                                        class="object-cover" style="color:transparent"
+                                        srcset="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F52178.webp&amp;w=64&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F52178.webp&amp;w=128&amp;q=75 2x"
+                                        src="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F52178.webp&amp;w=128&amp;q=75">
+                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1">جامعة أنجليا
+                                        رسكن</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide pb-10">
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
                                 <div
                                     class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center h-32 text-center transform transition-transform duration-300 hover:scale-105">
-                                    <img alt="جامعة أردن" loading="lazy" width="60" height="60" decoding="async"
-                                        class="object-contain"
-                                        src="https://www.professionalengineers.us/uploads/partners/source/30805.webp">
-                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1 font-arabic">
-                                        جامعة أردن</p>
+                                    <img alt="" loading="lazy" width="60" height="60" decoding="async" data-nimg="1"
+                                        class="object-cover" style="color:transparent"
+                                        srcset="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F30805.webp&amp;w=64&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F30805.webp&amp;w=128&amp;q=75 2x"
+                                        src="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F30805.webp&amp;w=128&amp;q=75">
+                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1">حامغة أردن</p>
                                 </div>
                             </div>
-                            <div class="swiper-slide pb-10">
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
                                 <div
                                     class="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center justify-center h-32 text-center transform transition-transform duration-300 hover:scale-105">
-                                    <img alt="كواليفاي" loading="lazy" width="60" height="60" decoding="async"
-                                        class="object-contain"
-                                        src="https://www.professionalengineers.us/uploads/partners/source/43222.png">
-                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1 font-arabic">
-                                        كواليفاي</p>
+                                    <img alt="" loading="lazy" width="60" height="60" decoding="async" data-nimg="1"
+                                        class="object-cover" style="color:transparent"
+                                        srcset="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F43222.png&amp;w=64&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F43222.png&amp;w=128&amp;q=75 2x"
+                                        src="/_next/image?url=https%3A%2F%2Fwww.professionalengineers.us%2Fuploads%2Fpartners%2Fsource%2F43222.png&amp;w=128&amp;q=75">
+                                    <p class="text-sm font-medium my-2 text-primary leading-tight px-1">كواليفاي</p>
                                 </div>
                             </div>
                         </div>
-                        <button
-                            class="swiper-button-prev absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-all duration-300 left-0 -ml-4 md:-ml-6"
-                            aria-label="Previous Partner">
-                            <i class="fas fa-chevron-right h-6 w-6" aria-hidden="true"></i>
-                        </button>
-                        <button
-                            class="swiper-button-next absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-all duration-300 right-0 -mr-4 md:-mr-6"
-                            aria-label="Next Partner">
-                            <i class="fas fa-chevron-left h-6 w-6" aria-hidden="true"></i>
-
-                        </button>
-
-                        <div class="swiper-pagination custom-pagination flex justify-center mt-8 space-x-2">
-                        </div>
-                    </div>
+                    </div><button
+                        class="review-button-prev absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-colors right-0 -mr-4 md:-mr-6 swiper-button-disabled"
+                        disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-chevron-right h-6 w-6" aria-hidden="true">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg></button><button
+                        class="review-button-next absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-colors left-0 -ml-4 md:-ml-6"
+                        aria-label="accreditations.next_testimonial_aria_label"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-chevron-left h-6 w-6" aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg></button>
+                    <div class="custom-pagination flex justify-center mt-8 space-x-2 flex-row-reverse"></div>
                 </div>
-
-                <div class="mt-12 md:mt-16 lg:mt-20 bg-primary text-white p-6 md:p-8 rounded-xl shadow-lg">
+                <div class="mt-12 md:mt-16 lg:mt-20 bg-primary text-white p-6 md:p-8 rounded-xl shadow-lg 
+          ">
                     <div class="grid md:grid-cols-2 gap-8 items-center md:grid-flow-col-dense-row">
                         <div>
-                            <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 font-arabic">ضمان الجودة الدولي</h3>
-                            <p class="text-accent-white/90 text-sm sm:text-base mb-4 font-arabic">تخضع جميع برامجنا
-                                لفحوصات جودة صارمة ومعتمدة من قبل مؤسسات مرموقة، مما يضمن حصولك على تعليم يلبي المعايير
-                                العالمية.</p>
+                            <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">ضمان الجودة الدولي</h3>
+                            <p class="text-accent-white/90 text-sm sm:text-base mb-4">تخضع جميع برامجنا لفحوصات جودة
+                                صارمة ومعتمدة من قبل مؤسسات مرموقة، مما يضمن حصولك على تعليم يلبي المعايير العالمية.</p>
                             <ul class="space-y-2">
-                                <li class="flex items-start">
-                                    <i class="fas fa-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 ltr:mr-2 rtl:ml-2"
-                                        aria-hidden="true"></i>
-                                    <span class="text-sm sm:text-base font-arabic">منهج دراسي مضمون الجودة</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 ltr:mr-2 rtl:ml-2"
-                                        aria-hidden="true"></i>
-                                    <span class="text-sm sm:text-base font-arabic">مؤهلات معترف بها دولياً</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 ltr:mr-2 rtl:ml-2"
-                                        aria-hidden="true"></i>
-                                    <span class="text-sm sm:text-base font-arabic">معايير أكاديمية صارمة</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fas fa-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 ltr:mr-2 rtl:ml-2"
-                                        aria-hidden="true"></i>
-                                    <span class="text-sm sm:text-base font-arabic">نتائج تعليمية متوافقة مع
-                                        الصناعة</span>
+                                <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 mr-0 ml-2"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-sm sm:text-base">منهج دراسي مضمون الجودة</span></li>
+                                <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 mr-0 ml-2"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-sm sm:text-base">مؤهلات معترف بها دولياً</span></li>
+                                <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 mr-0 ml-2"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-sm sm:text-base">معايير أكاديمية صارمة</span></li>
+                                <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-check h-5 w-5 text-accent-green flex-shrink-0 mt-1 mr-0 ml-2"
+                                        aria-hidden="true">
+                                        <path d="M20 6 9 17l-5-5"></path>
+                                    </svg><span class="text-sm sm:text-base">نتائج تعليمية متوافقة مع الصناعة</span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="relative">
-                            <img alt="معايير ضمان الجودة" loading="lazy" width="500" height="300" decoding="async"
-                                class="rounded-lg shadow-lg w-full h-auto" src="./img/photo/pexels-photo-8199561.jpeg">
+                        <div class="relative"><img alt="معايير ضمان الجودة" loading="lazy" width="500" height="300"
+                                decoding="async" data-nimg="1" class="rounded-lg shadow-lg w-full h-auto"
+                                style="color:transparent" sizes="(max-width: 768px) 100vw, 50vw"
+                                src="./img/photo/pexels-photo-8199561.jpeg">
                             <div
                                 class="absolute -top-4 -right-4 w-24 h-24 bg-accent-blue rounded-full opacity-20 animate-pulse-slow">
                             </div>
@@ -1571,16 +1833,17 @@
                         المهنية وتزويدهم بمهارات ومعارف قيمة.</p>
                 </div>
                 <div class="relative">
-                    <div class="swiper ReviewSwiper" dir="rtl">
+                    <div class="swiper swiper-initialized swiper-horizontal swiper-rtl mySwiper swiper-backface-hidden"
+                        dir="rtl">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div
-                                    class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            <div class="swiper-slide swiper-slide-active pb-10"
+                                style="height: 100%; width: 392px; margin-left: 20px;">
+                                <div class="bg-white h-full rounded-xl shadow-md overflow-hidden flex flex-col">
+                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
+                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20"
                                             aria-hidden="true">
                                             <path
                                                 d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
@@ -1592,17 +1855,15 @@
                                         <p
                                             class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
                                             كان إكمال درجة الماجستير في إدارة الأعمال من خلال سيرتيفايد أحد أفضل
-                                            القرارات المهنية التي اتخذتها. أتاح
-                                            لي نموذج التعلم المرن مواصلة العمل أثناء الدراسة، وقدم أعضاء هيئة التدريس
-                                            الدوليون وجهات نظر متنوعة وسعت
-                                            فهمي للأعمال التجارية العالمية.
-                                        </p>
+                                            القرارات المهنية التي اتخذتها. أتاح لي نموذج التعلم المرن مواصلة العمل أثناء
+                                            الدراسة، وقدم أعضاء هيئة التدريس الدوليون وجهات نظر متنوعة وسعت فهمي للأعمال
+                                            التجارية العالمية.</p>
                                         <div class="flex items-center mt-auto">
-                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                <img alt="سارة جونسون، خريجة ماجستير إدارة أعمال" loading="lazy"
-                                                    width="48" height="48" decoding="async"
-                                                    class="w-full h-full object-cover"
-                                                    src="./img/photo/pexels-photo-2379004.jpeg" />
+                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mx-4"><img
+                                                    alt="سارة جونسون، خريجة ماجستير إدارة أعمال" loading="lazy"
+                                                    width="48" height="48" decoding="async" data-nimg="1"
+                                                    class="w-full h-full object-cover" style="color:transparent"
+                                                    sizes="48px" src="./img/photo/pexels-photo-2379004.jpeg" />
                                             </div>
                                             <div>
                                                 <h4 class="font-bold text-primary text-base sm:text-lg">سارة جونسون</h4>
@@ -1616,15 +1877,14 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            <div class="swiper-slide swiper-slide-next pb-10"
+                                style="height: 100%; width: 392px; margin-left: 20px;">
+                                <div class="bg-white h-full rounded-xl shadow-md overflow-hidden flex flex-col">
+                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
+                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20"
                                             aria-hidden="true">
                                             <path
                                                 d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
@@ -1636,16 +1896,15 @@
                                         <p
                                             class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
                                             لقد كان برنامج الدكتوراه في إدارة الأعمال محفزًا فكريًا وذا صلة لا تصدق
-                                            بدوري التنفيذي. أعضاء هيئة التدريس
-                                            خبراء في مجالاتهم، ويوفرون توجيهًا يتجاوز الأكاديمية التقليدية. أوصي به بشدة
-                                            للمهنيين ذوي الخبرة الذين
-                                            يبحثون عن معرفة عميقة.
-                                        </p>
+                                            بدوري التنفيذي. أعضاء هيئة التدريس خبراء في مجالاتهم، ويوفرون توجيهًا يتجاوز
+                                            الأكاديمية التقليدية. أوصي به بشدة للمهنيين ذوي الخبرة الذين يبحثون عن معرفة
+                                            عميقة.</p>
                                         <div class="flex items-center mt-auto">
-                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                <img alt="ديفيد لي، مرشح دكتوراه إدارة أعمال" loading="lazy" width="48"
-                                                    height="48" decoding="async" class="w-full h-full object-cover"
-                                                    src="./img/photo/pexels-photo-2379004.jpeg" />
+                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mx-4"><img
+                                                    alt="ديفيد لي، مرشح دكتوراه إدارة أعمال" loading="lazy" width="48"
+                                                    height="48" decoding="async" data-nimg="1"
+                                                    class="w-full h-full object-cover" style="color:transparent"
+                                                    sizes="48px" src="./img/photo/pexels-photo-2379004.jpeg" />
                                             </div>
                                             <div>
                                                 <h4 class="font-bold text-primary text-base sm:text-lg">ديفيد لي</h4>
@@ -1659,15 +1918,13 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
+                                <div class="bg-white h-full rounded-xl shadow-md overflow-hidden flex flex-col">
+                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
+                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20"
                                             aria-hidden="true">
                                             <path
                                                 d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
@@ -1679,14 +1936,14 @@
                                         <p
                                             class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
                                             حصلت على شهادة PMP مع سيرتيفايد، وكانت تجربة سلسة. كانت المواد الدراسية
-                                            شاملة، وكان المدربون رائعين، حيث
-                                            أرشدونا خلال المفاهيم المعقدة بأمثلة عملية. لقد تحسنت آفاقي المهنية بشكل
-                                            كبير.
-                                        </p>
+                                            شاملة، وكان المدربون رائعين، حيث أرشدونا خلال المفاهيم المعقدة بأمثلة عملية.
+                                            لقد تحسنت آفاقي المهنية بشكل كبير.</p>
                                         <div class="flex items-center mt-auto">
-                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                <img alt="عائشة رحمن، معتمدة PMP" loading="lazy" width="48" height="48"
-                                                    decoding="async" class="w-full h-full object-cover"
+                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mx-4"><img
+                                                    alt="عائشة رحمن، معتمدة PMP" loading="lazy" width="48" height="48"
+                                                    decoding="async" data-nimg="1" class="w-full h-full object-cover"
+                                                    style="color:transparent" sizes="48px"
+                                                    srcset="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=16&amp;q=75 16w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=32&amp;q=75 32w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=48&amp;q=75 48w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=64&amp;q=75 64w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=96&amp;q=75 96w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=128&amp;q=75 128w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=256&amp;q=75 256w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=384&amp;q=75 384w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=640&amp;q=75 640w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=750&amp;q=75 750w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=828&amp;q=75 828w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpexels-photo-2379004.98c39fb9.jpeg&amp;w=3840&amp;q=75 3840w"
                                                     src="./img/photo/pexels-photo-2379004.jpeg">
                                             </div>
                                             <div>
@@ -1700,15 +1957,13 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
+                                <div class="bg-white h-full rounded-xl shadow-md overflow-hidden flex flex-col">
+                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
+                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20"
                                             aria-hidden="true">
                                             <path
                                                 d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
@@ -1720,15 +1975,14 @@
                                         <p
                                             class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
                                             الدورات المتخصصة المقدمة هنا رائدة حقًا في الصناعة. تمكنت من تطبيق ما تعلمته
-                                            فورًا على مهامي اليومية، مما
-                                            أدى إلى تحسينات ملحوظة في أداء فريقي. كان التنسيق عبر الإنترنت مثاليًا
-                                            لجدولي الزمني المزدحم.
-                                        </p>
+                                            فورًا على مهامي اليومية، مما أدى إلى تحسينات ملحوظة في أداء فريقي. كان
+                                            التنسيق عبر الإنترنت مثاليًا لجدولي الزمني المزدحم.</p>
                                         <div class="flex items-center mt-auto">
-                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                <img alt="كارلوس غارسيا، أخصائي تسويق" loading="lazy" width="48"
-                                                    height="48" decoding="async" class="w-full h-full object-cover"
-                                                    src="./img/photo/pexels-photo-2379004.jpeg" />
+                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mx-4"><img
+                                                    alt="كارلوس غارسيا، أخصائي تسويق" loading="lazy" width="48"
+                                                    height="48" decoding="async" data-nimg="1"
+                                                    class="w-full h-full object-cover" style="color:transparent"
+                                                    sizes="48px" src="./img/photo/pexels-photo-2379004.jpeg">
                                             </div>
                                             <div>
                                                 <h4 class="font-bold text-primary text-base sm:text-lg">كارلوس غارسيا
@@ -1742,15 +1996,13 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div
-                                    class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            <div class="swiper-slide pb-10" style="height: 100%; width: 392px; margin-left: 20px;">
+                                <div class="bg-white h-full rounded-xl shadow-md overflow-hidden flex flex-col">
+                                    <div class="p-6 sm:p-8 relative flex-1 flex flex-col"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
+                                            class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20"
                                             aria-hidden="true">
                                             <path
                                                 d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
@@ -1762,14 +2014,14 @@
                                         <p
                                             class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
                                             الدعم من فريق سيرتيفايد استثنائي. من التسجيل إلى التخرج، كانوا دائمًا متاحين
-                                            للإجابة على الأسئلة وتقديم
-                                            الإرشاد. كما أن مجتمع الطلاب جعل رحلة التعلم أكثر جاذبية.
-                                        </p>
+                                            للإجابة على الأسئلة وتقديم الإرشاد. كما أن مجتمع الطلاب جعل رحلة التعلم أكثر
+                                            جاذبية.</p>
                                         <div class="flex items-center mt-auto">
-                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
+                                            <div class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mx-4">
                                                 <img alt="إميلي تشن، مديرة موارد بشرية" loading="lazy" width="48"
-                                                    height="48" decoding="async" class="w-full h-full object-cover"
-                                                    src="./img/photo/pexels-photo-2379004.jpeg" />
+                                                    height="48" decoding="async" data-nimg="1"
+                                                    class="w-full h-full object-cover" style="color:transparent"
+                                                    sizes="48px" src="./img/photo/pexels-photo-2379004.jpeg" />
                                             </div>
                                             <div>
                                                 <h4 class="font-bold text-primary text-base sm:text-lg">إميلي تشن</h4>
@@ -1782,21 +2034,23 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
-                        <button
-                            class="swiper-button-prev absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-all duration-300 left-0 -ml-4 md:-ml-6"
-                            aria-label="Previous Partner">
-                            <i class="fas fa-chevron-right h-6 w-6" aria-hidden="true"></i> </button>
-                        <button
-                            class="swiper-button-next absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-all duration-300 right-0 -mr-4 md:-mr-6"
-                            aria-label="Next Partner">
-                            <i class="fas fa-chevron-left h-6 w-6" aria-hidden="true"></i> </button>
-
-                        <div class="swiper-pagination pt-40 custom-pagination flex justify-center  space-x-2">
-                        </div>
-                    </div>
+                    </div><button
+                        class="review-button-prev absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-colors right-0 -mr-4 md:-mr-6 swiper-button-disabled"
+                        aria-label="الشهادة السابقة" disabled=""><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-6 w-6"
+                            aria-hidden="true">
+                            <path d="m9 18 6-6-6-6"></path>
+                        </svg></button><button
+                        class="review-button-next absolute top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white shadow-lg flex items-center justify-center z-10 text-primary hover:text-accent-blue transition-colors left-0 -ml-4 md:-ml-6"
+                        aria-label="الشهادة التالية"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left h-6 w-6"
+                            aria-hidden="true">
+                            <path d="m15 18-6-6 6-6"></path>
+                        </svg></button>
+                    <div class="custom-pagination flex justify-center mt-8 space-x-2 flex-row-reverse"></div>
                 </div>
             </div>
         </section>
@@ -2120,12 +2374,7 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/index.js"></script>
 </body>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./scripts/index.js"></script>
-<script src="./scripts/swiper.js"></script>
-<script src="./scripts/tailwind.js"></script>
-
 
 </html>

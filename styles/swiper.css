@@ -1,0 +1,26 @@
+/* Base styles for all pagination bullets */
+.swiper-pagination-bullet {
+    width: 0.75rem; /* Equivalent to w-3 */
+    height: 0.75rem; /* Equivalent to h-3 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    background-color: #D1D5DB; /* Equivalent to bg-gray-300 */
+    transition: all 0.3s ease; /* Equivalent to transition-all */
+    cursor: pointer; /* Indicates it's clickable */
+    opacity: 1; /* Ensure full opacity */
+}
+
+/* Styles for the active pagination bullet */
+.swiper-pagination-bullet-active {
+    width: 1.5rem; /* Equivalent to w-6 (wider) */
+    background-color: #1887b5; /* Equivalent to bg-accent-blue (adjust to your accent color) */
+}
+
+/* Hover styles for inactive bullets */
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+    background-color: #9CA3AF; /* Equivalent to hover:bg-gray-400 */
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+    display: none;
+}

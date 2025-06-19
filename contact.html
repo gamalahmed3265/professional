@@ -2,151 +2,288 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-        @layer base {
-        :root {
-          /* Define your custom colors using CSS variables */
-          --color-primary: #1a202c; /* A dark almost black for primary text */
-          --color-accent-green: #34d399; /* A vibrant green for accents */
-          --color-accent-blue: #3b82f6; /* A vibrant blue for accents */
-          --color-accent-white: #f3f4f6; /* A light gray for subtle accents */
-        }
-      }
-    </style>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#233d4a",
-                        accent: "#F59E0B",
-                        "accent-blue": "#1887b5",
-                        "accent-green": "#57a67d",
-                    }
-                }
-            }
-        }
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certified | Training, Education Consultancy</title>
+    <meta name="description" content="Certified | Training, Education &amp; Consultancy" />
+    <meta name="keywords"
+        content="training, education, consultancy, certified, professional development, courses, degrees, Egypt" />
+    <meta name="author" content="Certified Education Consultancy" />
+
+    <meta property="og:title" content="Certified | Training, Education Consultancy" />
+    <meta property="og:description" content="Certified | Training, Education &amp; Consultancy" />
+    <meta property="og:image" content="https://www.yourwebsite.com/path/to/certified-share-image.jpg" />
+    <meta property="og:url" content="https://www.yourwebsite.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Certified | Training, Education Consultancy" />
+    <meta name="twitter:description" content="Certified | Training, Education &amp; Consultancy" />
+    <meta name="twitter:image" content="https://www.yourwebsite.com/path/to/certified-twitter-image.jpg" />
+    <meta name="twitter:creator" content="@Certified_Edu" />
+    <link rel="icon" href="./img/favicon.ico" sizes="any" />
+    <link rel="icon" href="./img/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="./styles/index.css" rel="stylesheet">
+    <link href="./styles/swiper.css" rel="stylesheet">
 </head>
 
-<body dir="rtl" lang="ar" class="noto_kufi_arabic_e01854e1-module__oCSy2a__variable" cz-shortcut-listen="true"
-    data-new-gr-c-s-check-loaded="14.1240.0" data-gr-ext-installed="">
-    <header class="header">
-        <div class="header-fixed">
-            <nav class="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="flex justify-between items-center h-16">
-                        <div class="flex items-center space-x-2 space-x-reverse md:hidden">
-                            <div class="relative"><button class="p-2 text-gray-700 hover:text-primary"
-                                    aria-label="الدخول"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-user h-5 w-5" aria-hidden="true">
-                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="12" cy="7" r="4"></circle>
-                                    </svg></button></div><button class="p-2 hover:bg-gray-100 rounded-full"
-                                aria-label="Switch to Arabic"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-globe h-5 w-5 text-primary" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                    <path d="M2 12h20"></path>
-                                </svg></button>
+<body dir="rtl" lang="ar" class="noto_kufi_arabic" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1240.0"
+    data-gr-ext-installed="">
+    <header class="bg-white py-4 sticky top-0 z-50 shadow-sm ltr">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-left">
+            <div class="flex items-center justify-between">
+                <a href="./index.html">
+                    <img src="./img/logo.webp" class="h-10" alt="Logo" />
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <div class="relative group">
+                        <button
+                            class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
+                            البرامج الأكاديمية
+                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
+                            <div class="p-2">
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-book-open h-4 w-4 text-accent-blue mr-2"></i>MBA
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-graduation-cap h-4 w-4 text-accent-blue mr-2"></i>PhD
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-scroll-text h-4 w-4 text-accent-blue mr-2"></i>MSc
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-award h-4 w-4 text-accent-blue mr-2"></i>DBA
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-book-open-reader h-4 w-4 text-accent-blue mr-2"></i>Bachelor
+                                </a>
+                            </div>
                         </div>
-                        <div class="flex items-center space-x-reverse"><a class="w-40 h-12 relative" href="/">
-                                <img alt="" loading="lazy" decoding="async" data-nimg="fill" class=""
-                                    style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent"
-                                    sizes="100vw" src="./img/logo.webp"></a>
-                        </div>
-                        <div class="hidden md:flex items-center space-x-8 space-x-reverse">
-                            <div class="relative group"><button
-                                    class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors"
-                                    aria-label="البرامج الأكاديمية">البرامج الأكاديمية<svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-chevron-down h-4 w-4 mr-1"
-                                        aria-hidden="true">
-                                        <path d="m6 9 6 6 6-6"></path>
-                                    </svg></button></div>
-                            <div class="relative group"><button
-                                    class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors"
-                                    aria-label="الدورات">الدورات<svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-chevron-down h-4 w-4 mr-1" aria-hidden="true">
-                                        <path d="m6 9 6 6 6-6"></path>
-                                    </svg></button></div>
-                            <div class="relative group"><button
-                                    class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors"
-                                    aria-label="المزيد">المزيد<svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-chevron-down h-4 w-4 mr-1" aria-hidden="true">
-                                        <path d="m6 9 6 6 6-6"></path>
-                                    </svg></button></div>
-                            <div class="relative group"><a href="/contact_us"
-                                    class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-mail h-4 w-4 mr-1"
-                                        aria-hidden="true">
-                                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                                    </svg>اتصل بنا</a></div>
-                        </div>
-                        <div class="hidden md:flex items-center space-x-4 space-x-reverse">
-                            <div class="relative"><button
-                                    class="p-2 hover:bg-accent-blue/10 rounded-full transition-colors"
-                                    aria-label="فتح البحث"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                        class="lucide lucide-search h-5 w-5 text-accent-blue" aria-hidden="true">
-                                        <path d="m21 21-4.34-4.34"></path>
-                                        <circle cx="11" cy="11" r="8"></circle>
-                                    </svg></button></div><button class="p-2 hover:bg-gray-100 rounded-full"
-                                aria-label="Switch to Arabic"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-globe h-5 w-5 text-primary" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-                                    <path d="M2 12h20"></path>
-                                </svg></button><button data-slot="button"
-                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-background shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5 border border-accent-blue text-accent-blue hover:bg-accent-blue/10">الدخول</button><button
-                                data-slot="button"
-                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5 bg-accent-blue hover:bg-accent-blue/90 text-white shadow-md"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-shopping-bag h-4 w-4 ml-2"
-                                    aria-hidden="true">
-                                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
-                                    <path d="M3 6h18"></path>
-                                    <path d="M16 10a4 4 0 0 1-8 0"></path>
-                                </svg>ابدأ الآن</button>
-                        </div>
-                        <div class="md:hidden"><button data-slot="button"
-                                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-md gap-1.5 px-3 has-[&gt;svg]:px-2.5"
-                                aria-label="فتح البحث"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu h-6 w-6"
-                                    aria-hidden="true">
-                                    <path d="M4 12h16"></path>
-                                    <path d="M4 18h16"></path>
-                                    <path d="M4 6h16"></path>
-                                </svg></button></div>
                     </div>
+                    <div class="relative group">
+                        <button
+                            class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
+                            الدورات
+                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
+                            <div class="p-2">
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-clipboard-check h-4 w-4 text-accent-blue mr-2"></i>PMP
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-chart-bar h-4 w-4 text-accent-blue mr-2"></i>PMO
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-book-atlas h-4 w-4 text-accent-blue mr-2"></i>Other Courses
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button
+                            class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
+                            المزيد
+                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                        </button>
+                        <div
+                            class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
+                            <div class="p-2">
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-file-lines h-4 w-4 text-accent-blue mr-2"></i>Blog
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-bookmark h-4 w-4 text-accent-blue mr-2"></i>Books
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-video h-4 w-4 text-accent-blue mr-2"></i>Video
+                                </a>
+                                <a href="#"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-circle-info h-4 w-4 text-accent-blue mr-2"></i>About
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <button
+                            class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
+                            <i class="fa-solid fa-phone h-4 w-4 text-accent-blue mr-2"></i>تواصل معنا
+                        </button>
+                    </div>
+                </nav>
+                <div class="hidden lg:flex items-center space-x-4">
+                    <div class="relative">
+                        <button class="p-2 hover:bg-accent-blue/10 rounded-full transition-colors"
+                            aria-label="Open search">
+                            <i class="fa-solid fa-magnifying-glass h-5 w-5 text-accent-blue"></i>
+                        </button>
+                    </div>
+                    <button class="p-2 hover:bg-gray-100 rounded-full" aria-label="Switch to Arabic">
+                        <i class="fa-solid fa-globe h-5 w-5 text-primary"></i>
+                    </button>
+                    <button
+                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10">Login</button>
+                    <button
+                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md">Sign
+                        Up</button>
                 </div>
-            </nav>
-            <div class="sidebar-overlay"></div>
+                <div id="mobile-menu-button" class="lg:hidden">
+                    <button id="mobile-menu-toggle" class="text-primary p-2" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
+
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden lg:hidden"></div>
+
+    <div id="mobile-menu-drawer"
+        class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden">
+        <div class="p-4">
+            <div class="flex justify-end">
+                <button id="close-mobile-menu" class="text-primary p-2">
+                    <i class="fa-solid fa-times h-6 w-6"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4 mt-4">
+                <div class="relative">
+                    <button id="academic-programs-mobile-toggle"
+                        class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
+                        Academic Programs
+                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                    </button>
+                    <div id="academic-programs-mobile-dropdown" class="pl-4 hidden">
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-book-open h-4 w-4 text-accent-blue mr-2"></i>MBA
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-graduation-cap h-4 w-4 text-accent-blue mr-2"></i>PhD
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-scroll-text h-4 w-4 text-accent-blue mr-2"></i>MSc
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-award h-4 w-4 text-accent-blue mr-2"></i>DBA
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-book-open-reader h-4 w-4 text-accent-blue mr-2"></i>Bachelor
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <button id="courses-mobile-toggle"
+                        class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
+                        Courses
+                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                    </button>
+                    <div id="courses-mobile-dropdown" class="pl-4 hidden">
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-clipboard-check h-4 w-4 text-accent-blue mr-2"></i>PMP
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-chart-bar h-4 w-4 text-accent-blue mr-2"></i>PMO
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-book-atlas h-4 w-4 text-accent-blue mr-2"></i>Other Courses
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <button id="more-mobile-toggle"
+                        class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
+                        More
+                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                    </button>
+                    <div id="more-mobile-dropdown" class="pl-4 hidden">
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-file-lines h-4 w-4 text-accent-blue mr-2"></i>Blog
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-bookmark h-4 w-4 text-accent-blue mr-2"></i>Books
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-video h-4 w-4 text-accent-blue mr-2"></i>Video
+                        </a>
+                        <a href="#"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-circle-info h-4 w-4 text-accent-blue mr-2"></i>About
+                        </a>
+                    </div>
+                </div>
+                <a href="#"
+                    class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors py-2">
+                    <i class="fa-solid fa-phone h-4 w-4 text-accent-blue mr-2"></i>تواصل معنا
+                </a>
+                <button class="flex items-center text-primary hover:bg-gray-100 rounded-md py-2">
+                    <i class="fa-solid fa-magnifying-glass h-5 w-5 text-accent-blue mr-2"></i>Search
+                </button>
+                <button class="flex items-center text-primary hover:bg-gray-100 rounded-md py-2"
+                    aria-label="Switch to Arabic">
+                    <i class="fa-solid fa-globe h-5 w-5 text-primary mr-2"></i>Switch to Arabic
+                </button>
+                <button
+                    class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10 w-full mt-4">Login</button>
+                <button
+                    class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md w-full">Sign
+                    Up</button>
+            </nav>
+        </div>
+    </div>
+
+
     <div class=" py-12 md:py-20">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 ">
@@ -305,7 +442,7 @@
                     </div>
                     <div class="mt-2">
                         <ul class="flex 
-            ">
+        ">
                             <li><a target="_blank" rel="noopener noreferrer"
                                     href="https://www.facebook.com/pengineerspmpmaster"
                                     class="w-10 h-10 rounded-full hover:shadow-sm flex items-center justify-center text-accent-blue hover:scale-110 hover-translate-middle-x p-2 hover:text-white hover:bg-accent-blue transition-colors hvr-buzz-out"><svg
@@ -416,5 +553,11 @@
         </div>
     </footer>
 </body>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/swiper.js"></script>
+<script src="./scripts/tailwind.js"></script>
+
 
 </html>

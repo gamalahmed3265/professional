@@ -58,24 +58,6 @@
                 padding-left: 300px;
             }
         }*/
-
-        .form-minimized {
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
-            /* Added margin-bottom to ensure proper spacing when minimized */
-            margin-bottom: 0 !important;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-            transition: max-height 0.3s ease-out, opacity 0.3s ease-out, margin 0.3s ease-out, padding 0.3s ease-out;
-        }
-
-        .form-expanded {
-            max-height: 1000px;
-            /* A value larger than the actual height of the form */
-            opacity: 1;
-            transition: max-height 0.3s ease-in, opacity 0.3s ease-in, margin 0.3s ease-in, padding 0.3s ease-in;
-        }
     </style>
 </head>
 
@@ -318,7 +300,6 @@
 
 
     <main>
-
         <section
             class="relative bg-gradient-to-br from-accent-blue to-primary pt-16 pb-24 lg:py-0 lg:min-h-[85vh] flex items-center overflow-hidden">
 
@@ -414,51 +395,52 @@
                 </div>
             </div>
             <aside id="myAside"
-                class="sticky left-0 top-0 h-full w-72 bg-white shadow-xl p-6 pt-24 z-20 hidden lg:block overflow-y-auto">
+                class="sticky left-0 top-0 my-10 mx-5 h-auto w-80 bg-white shadow-2xl p-7 rounded-xl z-30 hidden lg:block overflow-y-auto transform transition-all duration-300 ease-in-out">
                 <div class="flex flex-col items-center">
-                    <button id="toggleFormButton"
-                        class="absolute top-4 right-4 bg-gray-200 text-gray-700 p-2 rounded-full shadow-sm hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 transition-all duration-300">
-                        <i class="fas fa-minus text-sm"></i> </button>
-                    <h3 class="text-sm font-extrabold text-gray-900 mb-8 animate-fade-in-down">التسجيل/تسجيل الدخول
+                    <h3
+                        class="text-2xl font-extrabold text-gray-900 mb-6 text-center animate-fade-in-down drop-shadow-sm">
+                        سجل الآن!
                     </h3>
-
+                    <p class="text-gray-600 text-sm mb-8 text-center px-2">
+                        انضم لدورتنا التدريبية المميزة وابدأ رحلتك نحو التميز المهني.
+                    </p>
 
                     <div id="formContent" class="w-full form-expanded">
-                        <form class="w-full space-y-6">
+                        <form class="w-full space-y-5">
                             <div>
                                 <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1">الاسم
                                     الأول</label>
                                 <input type="text" id="first_name" name="first_name"
                                     class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-right transition-all duration-200"
-                                    placeholder="أدخل اسمك الأول">
+                                    placeholder="أدخل اسمك الأول" required>
                             </div>
                             <div>
                                 <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1">الاسم
                                     الأخير</label>
                                 <input type="text" id="last_name" name="last_name"
                                     class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-right transition-all duration-200"
-                                    placeholder="أدخل اسمك الأخير">
+                                    placeholder="أدخل اسمك الأخير" required>
                             </div>
                             <div>
                                 <label for="mobile_number" class="block text-sm font-medium text-gray-700 mb-1">رقم
                                     الجوال</label>
                                 <input type="tel" id="mobile_number" name="mobile_number"
                                     class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-right"
-                                    placeholder="مثال: 05XXXXXXXX" dir="ltr">
+                                    placeholder="مثال: 05XXXXXXXX" dir="ltr" required>
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-medium text-gray-700 mb-1">البريد
                                     الإلكتروني</label>
                                 <input type="email" id="email" name="email"
                                     class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-right"
-                                    placeholder="example@email.com" dir="ltr">
+                                    placeholder="example@email.com" dir="ltr" required>
                             </div>
                             <div>
                                 <label for="password" class="block text-sm font-medium text-gray-700 mb-1">كلمة
                                     المرور</label>
                                 <input type="password" id="password" name="password"
                                     class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-right"
-                                    placeholder="أدخل كلمة المرور">
+                                    placeholder="أدخل كلمة المرور" required>
                             </div>
 
                             <div class="space-y-3">
@@ -466,7 +448,7 @@
                                 <div class="flex flex-col items-center gap-3">
                                     <input type="text" id="captcha_input" name="captcha_input"
                                         class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-right"
-                                        placeholder="أدخل الرمز">
+                                        placeholder="أدخل الرمز" required>
 
                                     <div class="flex items-center gap-2 w-full justify-center">
                                         <div class="flex items-center bg-gray-100 rounded-lg h-11 px-4 min-w-[120px] justify-center text-gray-800 font-bold text-xl select-none tracking-wide border border-gray-200"
@@ -508,7 +490,7 @@
             <div class="container mx-auto max-w-5xl">
                 <div class="flex border-b border-gray-200 mb-8 overflow-x-auto whitespace-nowrap">
                     <button
-                        class="tab-button active flex-shrink-0 py-4 px-6 text-lg font-medium text-gray-700 hover:text-accent-blue transition-colors duration-200"
+                        class="tab-button active flex-shrink-0 py-4 px-6 text-lg font-medium text-gray-700 hover:text-accent-blue transition-colors duration-200 border-b-2 border-accent-blue"
                         data-tab="overview">
                         نظرة عامة على الدورة
                     </button>
@@ -529,7 +511,7 @@
                     </button>
                 </div>
 
-                <div id="tab-overview" class="tab-content active">
+                <div id="tab-overview" class="tab-content active transition-opacity duration-300 ease-in-out">
                     <h2 class="text-3xl font-bold text-gray-800 mb-4">نظرة عامة على الدورة</h2>
                     <p class="text-gray-700 leading-relaxed mb-4">
                         تقدم هذه الدورة التدريبية الشاملة إطارًا متينًا لفهم وتطبيق مبادئ إدارة المشاريع، مع التركيز على
@@ -551,7 +533,7 @@
                     </p>
                 </div>
 
-                <div id="tab-why-this-course" class="tab-content hidden">
+                <div id="tab-why-this-course" class="tab-content hidden transition-opacity duration-300 ease-in-out">
                     <h2 class="text-3xl font-bold text-gray-800 mb-4">لماذا هذه الدورة بالذات؟</h2>
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>**محتوى محدث ومتوافق:** تتوافق الدورة بالكامل مع أحدث إصدارات دليل PMBOK® وتغطي جميع مجالات
@@ -570,7 +552,7 @@
                     </ul>
                 </div>
 
-                <div id="tab-who-for" class="tab-content hidden">
+                <div id="tab-who-for" class="tab-content hidden transition-opacity duration-300 ease-in-out">
                     <h2 class="text-3xl font-bold text-gray-800 mb-4">لمن هذه الدورة؟</h2>
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>مديرو المشاريع الذين يسعون للحصول على شهادة PMP.</li>
@@ -580,7 +562,7 @@
                     </ul>
                 </div>
 
-                <div id="tab-reviews" class="tab-content hidden">
+                <div id="tab-reviews" class="tab-content hidden transition-opacity duration-300 ease-in-out">
                     <h2 class="text-3xl font-bold text-gray-800 mb-8">آراء المستخدمين</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
@@ -1107,60 +1089,62 @@
         </div>
     </footer>
 </body>
-<script>
-    // We only need to control the form content now
-    const toggleFormButton = document.getElementById('toggleFormButton');
-    const formContent = document.getElementById('formContent');
-    const aside = document.querySelector('aside');
 
-    // Function to toggle the visibility/minimization of the form content
-    function toggleFormMinimize() {
-        formContent.classList.toggle('form-minimized');
-        formContent.classList.toggle('form-expanded');
-        aside.classList.toggle('h-full w-72 bg-white shadow-xl p-6 pt-24 z-50 hidden lg:block overflow-y-auto');
-        // Change the icon of the form toggle button
-        const icon = toggleFormButton.querySelector('i');
-        if (formContent.classList.contains('form-minimized')) {
-            icon.classList.remove('fa-minus');
-            icon.classList.add('fa-plus'); // Plus icon to expand
-        } else {
-            icon.classList.remove('fa-plus');
-            icon.classList.add('fa-minus'); // Minus icon to minimize
-        }
-    }
-
-    // Event listener for the form toggle button
-    toggleFormButton.addEventListener('click', toggleFormMinimize);
-
-    // This ensures the form is expanded by default on load, especially for large screens where the aside is visible
-    window.addEventListener('DOMContentLoaded', () => {
-        // Check if the aside is visible (for lg:block behavior)
-        // You might want to refine this check based on your specific needs
-        const myAside = document.getElementById('myAside');
-        const isAsideVisibleOnLoad = window.getComputedStyle(myAside).display !== 'none';
-
-        if (isAsideVisibleOnLoad) {
-            formContent.classList.add('form-expanded');
-            formContent.classList.remove('form-minimized');
-            toggleFormButton.querySelector('i').classList.remove('fa-plus');
-            toggleFormButton.querySelector('i').classList.add('fa-minus');
-        } else {
-            // If the aside is hidden on small screens, the form should remain expanded
-            // within the hidden aside, so it's ready when the aside becomes visible.
-            // Or you could decide to initialize it minimized on small screens if that's desired.
-            // For now, we'll keep it expanded by default, as the aside itself is hidden.
-            formContent.classList.add('form-expanded');
-            formContent.classList.remove('form-minimized');
-            toggleFormButton.querySelector('i').classList.remove('fa-plus');
-            toggleFormButton.querySelector('i').classList.add('fa-minus');
-        }
-    });
-</script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./scripts/index.js"></script>
 <script src="./scripts/swiper.js"></script>
 <script src="./scripts/tailwind.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
 
+        // Function to activate a specific tab
+        const activateTab = (tabName) => {
+            // Deactivate all buttons and content
+            tabButtons.forEach(button => {
+                button.classList.remove('active', 'border-b-2', 'border-accent-blue');
+            });
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('active', 'opacity-100'); // Ensure active state is removed
+            });
+
+            // Activate the clicked button
+            const activeButton = document.querySelector(`.tab-button[data-tab="${tabName}"]`);
+            if (activeButton) {
+                activeButton.classList.add('active', 'border-b-2', 'border-accent-blue');
+            }
+
+            // Activate the corresponding content with a slight delay for fade effect
+            const activeContent = document.getElementById(`tab-${tabName}`);
+            if (activeContent) {
+                activeContent.classList.remove('hidden');
+                // Using a timeout to allow the 'hidden' class to apply before 'opacity-100' for transition
+                setTimeout(() => {
+                    activeContent.classList.add('active', 'opacity-100');
+                }, 10); // Small delay
+            }
+        };
+
+        // Add click event listeners to tab buttons
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabName = button.dataset.tab;
+                activateTab(tabName);
+            });
+        });
+
+        // Initialize: Activate the first tab on page load
+        // Check if there's an active tab defined in HTML, otherwise default to 'overview'
+        const initialActiveTab = document.querySelector('.tab-button.active');
+        if (initialActiveTab) {
+            activateTab(initialActiveTab.dataset.tab);
+        } else {
+            activateTab('overview'); // Fallback if no initial active tab is set
+        }
+    });
+</script>
 
 </html>

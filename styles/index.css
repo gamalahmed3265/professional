@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Noto+Kufi+Arabic:wght@100..900&family=Outfit:wght@100..900&display=swap");
 
-
-body{
+body {
     font-family: "Noto Kufi Arabic";
 }
 
@@ -26,8 +25,19 @@ body{
         background-position: 50px 50px;
     }
 }
- /* Custom styles for active tab and Swiper pagination if needed */
- .tab-button.active {
+/* Custom styles for active tab and Swiper pagination if needed */
+.tab-button.active {
     border-bottom: 3px solid #1887b5; /* blue-500 */
     color: #1887b5; /* blue-500 */
+}
+
+/* Custom styles if needed, or to override Tailwind defaults */
+.tab-button.active {
+    @apply bg-primary text-white shadow-md; /* Apply active styles */
+}
+.tab-content {
+    display: none; /* Hide all tab content by default */
+}
+.tab-content.active {
+    display: block; /* Show active tab content */
 }

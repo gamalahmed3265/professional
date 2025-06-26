@@ -41,3 +41,34 @@ body {
 .tab-content.active {
     display: block; /* Show active tab content */
 }
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+#myAside::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+#myAside::-webkit-scrollbar-track {
+    /* Use your defined accent-blue color */
+    background: #1887b5; /* Or use a CSS variable if you've defined them globally */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+#myAside::-webkit-scrollbar-thumb {
+    /* Use your defined accent-blue color */
+    background: #1887b5; /* Or use a CSS variable */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    /* The border color should ideally contrast or match the track background for visual clarity */
+    border: 3px solid #f1f1f1; /* Creates a border around the thumb */
+}
+
+#myAside::-webkit-scrollbar-thumb:hover {
+    /* Use your defined accent-blue or a slightly darker shade for hover effect */
+    background: #1579a0; /* A slightly darker blue for hover, or pick another accent color */
+}
+
+/* For Firefox */
+#myAside {
+    /* You can directly use the hex code here, or if you're setting CSS variables based on your Tailwind config, use them. */
+    scrollbar-color: #1887b5 #f1f1f1; /* thumb color and track color for Firefox */
+    scrollbar-width: thin; /* "auto" or "none" for Firefox */
+}

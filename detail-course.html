@@ -428,95 +428,7 @@
 
         </section>
         <main class="grid grid-cols-1 md:grid-cols-4 gap-4">
-
-            <aside class="md:col-span-1 relative">
-
-                <div id="myAside"
-                    class="block md:sticky shadow z-[1000] right-0 top-0 my-10 md:mx-5 h-auto w-full md:w-80 bg-white p-7 rounded-xl z-30 block overflow-y-auto transform transition-all duration-300 ease-in-out">
-                    <div class="flex flex-col items-center">
-                        <h3
-                            class="text-2xl font-extrabold text-gray-900 mb-6 text-center animate-fade-in-down drop-shadow-sm">
-                            سجل الآن!</h3>
-                        <p class="text-gray-600 text-sm mb-8 text-center px-2">انضم لدورتنا التدريبية المميزة وابدأ
-                            رحلتك
-                            نحو التميز المهني.</p>
-                        <div id="formContent" class="w-full form-expanded">
-                            <div class="w-full space-y-5">
-                                <div>
-                                    <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1">الاسم
-                                        الأول</label>
-                                    <input type="text" id="first_name" name="first_name"
-                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm text-right transition-all duration-200"
-                                        placeholder="أدخل اسمك الأول" required>
-                                </div>
-                                <div>
-                                    <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1">الاسم
-                                        الأخير</label>
-                                    <input type="text" id="last_name" name="last_name"
-                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm text-right transition-all duration-200"
-                                        placeholder="أدخل اسمك الأخير" required>
-                                </div>
-                                <div>
-                                    <label for="mobile_number" class="block text-sm font-medium text-gray-700 mb-1">رقم
-                                        الجوال</label>
-                                    <input type="tel" id="mobile_number" name="mobile_number"
-                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm text-right"
-                                        placeholder="مثال: 05XXXXXXXX" dir="ltr" required>
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">البريد
-                                        الإلكتروني</label>
-                                    <input type="email" id="email" name="email"
-                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm text-right"
-                                        placeholder="example@email.com" dir="ltr" required>
-                                </div>
-                                <div>
-                                    <label for="password" class="block text-sm font-medium text-gray-700 mb-1">كلمة
-                                        المرور</label>
-                                    <input type="password" id="password" name="password"
-                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm text-right"
-                                        placeholder="أدخل كلمة المرور" required>
-                                </div>
-                                <div class="space-y-3">
-                                    <label class="block text-sm font-medium text-gray-700">التحقق من CAPTCHA</label>
-                                    <div class="flex flex-col items-center gap-3">
-                                        <input type="text" id="captcha_input" name="captcha_input"
-                                            class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm text-right"
-                                            placeholder="أدخل الرمز" required>
-                                        <div class="flex items-center gap-2 w-full justify-center">
-                                            <div class="flex items-center bg-gray-100 rounded-lg h-11 px-4 min-w-[120px] justify-center text-gray-800 font-bold text-xl select-none tracking-wide border border-gray-200"
-                                                id="captcha_display">ABCD12</div>
-                                            <button type="button" id="refresh_captcha"
-                                                class="bg-blue-100 text-blue-600 p-3 rounded-lg hover:bg-blue-200 transition-colors duration-200 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-accent-blue focus:ring-opacity-50">
-                                                <i class="fas fa-sync-alt text-lg"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="button"
-                                    class="w-full bg-accent-blue text-white font-bold py-3 px-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 animate-fade-in-up delay-400">تسجيل/تسجيل
-                                    الدخول</button>
-                            </div>
-                            <div class="mt-8 text-center w-full">
-                                <div class="relative flex justify-center text-sm mb-6">
-                                    <span class="px-3 bg-white text-gray-500 z-10">أو</span>
-                                    <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-gray-200"
-                                        aria-hidden="true"></div>
-                                </div>
-                                <button
-                                    class="w-full inline-flex items-center justify-center border border-gray-300 rounded-lg shadow-md py-2.5 px-4 bg-white text-gray-700 hover:bg-gray-50 transition-all duration-200 font-medium transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-blue focus:ring-opacity-50">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
-                                        alt="Google logo" class="w-5 h-5 ml-3">
-                                    تسجيل الدخول باستخدام جوجل
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-
             <section class="md:col-span-3">
-
                 <section class="py-16 px-6 md:px-12 bg-white">
                     <div class="container mx-auto max-w-5xl">
                         <div class="flex border-b border-gray-200 mb-8 overflow-x-auto whitespace-nowrap">
@@ -539,6 +451,11 @@
                             <button
                                 class="tab-button flex-shrink-0 py-4 px-6 text-lg font-medium text-gray-700 hover:text-accent-blue transition-colors duration-200"
                                 data-tab="reviews">
+                                آراء الطلاب
+                            </button>
+                            <button
+                                class="tab-button flex-shrink-0 py-4 px-6 text-lg font-medium text-gray-700 hover:text-accent-blue transition-colors duration-200"
+                                data-tab="certificate">
                                 الشهادات والاعتمادات
                             </button>
                         </div>
@@ -655,9 +572,25 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="tab-certificate"
+                            class="tab-content active transition-opacity duration-300 ease-in-out">
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">يحصل الطالب على شهادة دولية طوال فترة
+                                البرنامج :</h2>
+
+                            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-4">
+                                <li>
+                                    شهادة المستوى الرابع والخامس
+
+                                </li>
+                                <li>
+                                    شهادة البكالوريوس من واحدة من الجامعتين
+
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
                 </section>
-
                 <section class=" py-16 px-6 md:px-12">
                     <div class="container mx-auto max-w-5xl">
                         <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">دورات ذات صلة</h2>
@@ -739,7 +672,7 @@
                 </section>
                 <section class="mt-12 mx-10  p-6 md:p-8 bg-primary rounded-xl text-white">
                     <div class="md:flex items-center justify-between ">
-                        <div class="mb-6 md:mb-0 text-right">
+                        <div class="mb-6 md:mb-0 ">
                             <h3 class="text-xl md:text-2xl font-bold mb-2">حان الوقت لتستثمر في نفسك
                             </h3>
                             <p class="text-accent-white/90 text-sm md:text-base">
@@ -801,7 +734,7 @@
                 </section>
                 <section class="py-12 md:py-20">
                     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 text-right">
+                        <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 ">
                             <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">ماذا يقول طلابنا</h2>
                             <p class="text-gray-600 text-base sm:text-lg">استمع إلى خريجينا حول كيفية تحويل برامجنا
                                 لمسيرتهم
@@ -811,244 +744,47 @@
                             <div class="swiper ReviewSwiper" dir="rtl">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div
-                                            class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                            <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
-                                                    aria-hidden="true">
-                                                    <path
-                                                        d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                    <path
-                                                        d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                </svg>
-                                                <p
-                                                    class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
-                                                    كان إكمال درجة الماجستير في إدارة الأعمال من خلال سيرتيفايد أحد أفضل
-                                                    القرارات المهنية التي اتخذتها. أتاح
-                                                    لي نموذج التعلم المرن مواصلة العمل أثناء الدراسة، وقدم أعضاء هيئة
-                                                    التدريس
-                                                    الدوليون وجهات نظر متنوعة وسعت
-                                                    فهمي للأعمال التجارية العالمية.
-                                                </p>
-                                                <div class="flex items-center mt-auto">
-                                                    <div
-                                                        class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                        <img alt="سارة جونسون، خريجة ماجستير إدارة أعمال" loading="lazy"
-                                                            width="48" height="48" decoding="async"
-                                                            class="w-full h-full object-cover"
-                                                            src="./img/photo/pexels-photo-2379004.jpeg" />
-                                                    </div>
-                                                    <div>
-                                                        <h4 class="font-bold text-primary text-base sm:text-lg">سارة
-                                                            جونسون
-                                                        </h4>
-                                                        <p class="text-sm text-gray-500">خريجة ماجستير إدارة أعمال،
-                                                            مديرة
-                                                            تسويق
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="h-1 bg-gradient-to-r from-accent-green to-accent-blue absolute bottom-0 left-0 right-0">
-                                                </div>
-                                            </div>
+                                        <div class="aspect-video">
+                                            <iframe class="w-full h-full"
+                                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div
-                                            class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                            <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
-                                                    aria-hidden="true">
-                                                    <path
-                                                        d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                    <path
-                                                        d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                </svg>
-                                                <p
-                                                    class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
-                                                    لقد كان برنامج الدكتوراه في إدارة الأعمال محفزًا فكريًا وذا صلة لا
-                                                    تصدق
-                                                    بدوري التنفيذي. أعضاء هيئة التدريس
-                                                    خبراء في مجالاتهم، ويوفرون توجيهًا يتجاوز الأكاديمية التقليدية. أوصي
-                                                    به
-                                                    بشدة
-                                                    للمهنيين ذوي الخبرة الذين
-                                                    يبحثون عن معرفة عميقة.
-                                                </p>
-                                                <div class="flex items-center mt-auto">
-                                                    <div
-                                                        class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                        <img alt="ديفيد لي، مرشح دكتوراه إدارة أعمال" loading="lazy"
-                                                            width="48" height="48" decoding="async"
-                                                            class="w-full h-full object-cover"
-                                                            src="./img/photo/pexels-photo-2379004.jpeg" />
-                                                    </div>
-                                                    <div>
-                                                        <h4 class="font-bold text-primary text-base sm:text-lg">ديفيد لي
-                                                        </h4>
-                                                        <p class="text-sm text-gray-500">مرشح دكتوراه إدارة أعمال،
-                                                            مستشار
-                                                            أول
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="h-1 bg-gradient-to-r from-accent-green to-accent-blue absolute bottom-0 left-0 right-0">
-                                                </div>
-                                            </div>
+                                        <div class="aspect-video">
+                                            <iframe class="w-full h-full"
+                                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div
-                                            class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                            <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
-                                                    aria-hidden="true">
-                                                    <path
-                                                        d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                    <path
-                                                        d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                </svg>
-                                                <p
-                                                    class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
-                                                    حصلت على شهادة PMP مع سيرتيفايد، وكانت تجربة سلسة. كانت المواد
-                                                    الدراسية
-                                                    شاملة، وكان المدربون رائعين، حيث
-                                                    أرشدونا خلال المفاهيم المعقدة بأمثلة عملية. لقد تحسنت آفاقي المهنية
-                                                    بشكل
-                                                    كبير.
-                                                </p>
-                                                <div class="flex items-center mt-auto">
-                                                    <div
-                                                        class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                        <img alt="عائشة رحمن، معتمدة PMP" loading="lazy" width="48"
-                                                            height="48" decoding="async"
-                                                            class="w-full h-full object-cover"
-                                                            src="./img/photo/pexels-photo-2379004.jpeg">
-                                                    </div>
-                                                    <div>
-                                                        <h4 class="font-bold text-primary text-base sm:text-lg">عائشة
-                                                            رحمن
-                                                        </h4>
-                                                        <p class="text-sm text-gray-500">معتمدة PMP، مديرة مشروع</p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="h-1 bg-gradient-to-r from-accent-green to-accent-blue absolute bottom-0 left-0 right-0">
-                                                </div>
-                                            </div>
+                                        <div class="aspect-video">
+                                            <iframe class="w-full h-full"
+                                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div
-                                            class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                            <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
-                                                    aria-hidden="true">
-                                                    <path
-                                                        d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                    <path
-                                                        d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                </svg>
-                                                <p
-                                                    class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
-                                                    الدورات المتخصصة المقدمة هنا رائدة حقًا في الصناعة. تمكنت من تطبيق
-                                                    ما
-                                                    تعلمته
-                                                    فورًا على مهامي اليومية، مما
-                                                    أدى إلى تحسينات ملحوظة في أداء فريقي. كان التنسيق عبر الإنترنت
-                                                    مثاليًا
-                                                    لجدولي الزمني المزدحم.
-                                                </p>
-                                                <div class="flex items-center mt-auto">
-                                                    <div
-                                                        class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                        <img alt="كارلوس غارسيا، أخصائي تسويق" loading="lazy" width="48"
-                                                            height="48" decoding="async"
-                                                            class="w-full h-full object-cover"
-                                                            src="./img/photo/pexels-photo-2379004.jpeg" />
-                                                    </div>
-                                                    <div>
-                                                        <h4 class="font-bold text-primary text-base sm:text-lg">كارلوس
-                                                            غارسيا
-                                                        </h4>
-                                                        <p class="text-sm text-gray-500">أخصائي تسويق</p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="h-1 bg-gradient-to-r from-accent-green to-accent-blue absolute bottom-0 left-0 right-0">
-                                                </div>
-                                            </div>
+                                        <div class="aspect-video">
+                                            <iframe class="w-full h-full"
+                                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
                                         </div>
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <div
-                                            class="bg-white min-h-[350px] h-full rounded-xl shadow-md overflow-hidden flex flex-col">
-                                            <div class="p-6 sm:p-8 relative flex-1 flex flex-col">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-quote absolute top-4 left-4 h-8 w-8 text-accent-blue opacity-20 transform -scale-x-100"
-                                                    aria-hidden="true">
-                                                    <path
-                                                        d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                    <path
-                                                        d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z">
-                                                    </path>
-                                                </svg>
-                                                <p
-                                                    class="text-gray-600 mb-6 relative z-10 text-sm sm:text-base line-clamp-4 overflow-y-hidden">
-                                                    الدعم من فريق سيرتيفايد استثنائي. من التسجيل إلى التخرج، كانوا
-                                                    دائمًا
-                                                    متاحين
-                                                    للإجابة على الأسئلة وتقديم
-                                                    الإرشاد. كما أن مجتمع الطلاب جعل رحلة التعلم أكثر جاذبية.
-                                                </p>
-                                                <div class="flex items-center mt-auto">
-                                                    <div
-                                                        class="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 mr-4">
-                                                        <img alt="إميلي تشن، مديرة موارد بشرية" loading="lazy"
-                                                            width="48" height="48" decoding="async"
-                                                            class="w-full h-full object-cover"
-                                                            src="./img/photo/pexels-photo-2379004.jpeg" />
-                                                    </div>
-                                                    <div>
-                                                        <h4 class="font-bold text-primary text-base sm:text-lg">إميلي
-                                                            تشن
-                                                        </h4>
-                                                        <p class="text-sm text-gray-500">مديرة موارد بشرية</p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="h-1 bg-gradient-to-r from-accent-green to-accent-blue absolute bottom-0 left-0 right-0">
-                                                </div>
-                                            </div>
+                                        <div class="aspect-video">
+                                            <iframe class="w-full h-full"
+                                                src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
                                         </div>
                                     </div>
 
@@ -1069,8 +805,92 @@
                         </div>
                     </div>
                 </section>
+            </section>
+            <aside class="md:col-span-1 relative">
+                <div id="myAside"
+                    class="block md:sticky shadow md:shadow-md lg:shadow-lg z-[1000] right-0 top-0 my-10 h-screen md:mx-5 overflow-y-scroll w-full md:w-80 bg-white p-7 rounded-xl z-30 block overflow-y-auto transform transition-all duration-300 ease-in-out">
+                    <div class="flex flex-col items-center h-[100px]">
+                        <h3
+                            class="text-2xl font-extrabold text-gray-900 mb-6 text-center animate-fade-in-down drop-shadow-sm">
+                            سجل الآن!</h3>
+                        <p class="text-gray-600 text-sm mb-8 text-center px-2">انضم لدورتنا التدريبية المميزة وابدأ
+                            رحلتك
+                            نحو التميز المهني.</p>
+                        <div id="formContent" class="w-full h-[100vh-100px]  form-expanded">
+                            <div class="w-full space-y-5">
+                                <div>
+                                    <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1">الاسم
+                                        الأول</label>
+                                    <input type="text" id="first_name" name="first_name"
+                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm  transition-all duration-200"
+                                        placeholder="أدخل اسمك الأول" required>
+                                </div>
+                                <div>
+                                    <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1">الاسم
+                                        الأخير</label>
+                                    <input type="text" id="last_name" name="last_name"
+                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm  transition-all duration-200"
+                                        placeholder="أدخل اسمك الأخير" required>
+                                </div>
+                                <div>
+                                    <label for="mobile_number" class="block text-sm font-medium text-gray-700 mb-1">رقم
+                                        الجوال</label>
+                                    <input type="tel" id="mobile_number" name="mobile_number"
+                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm "
+                                        placeholder="مثال: 05XXXXXXXX" dir="ltr" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">البريد
+                                        الإلكتروني</label>
+                                    <input type="email" id="email" name="email"
+                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm "
+                                        placeholder="example@email.com" dir="ltr" required>
+                                </div>
+                                <div>
+                                    <label for="password" class="block text-sm font-medium text-gray-700 mb-1">كلمة
+                                        المرور</label>
+                                    <input type="password" id="password" name="password"
+                                        class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm "
+                                        placeholder="أدخل كلمة المرور" required>
+                                </div>
+                                <div class="space-y-3">
+                                    <label class="block text-sm font-medium text-gray-700">التحقق من CAPTCHA</label>
+                                    <div class="flex flex-col items-center gap-3">
+                                        <input type="text" id="captcha_input" name="captcha_input"
+                                            class="mt-1 block w-full border border-gray-300 rounded-lg shadow-sm py-2.5 px-4 focus:outline-none focus:ring-accent-blue focus:border-accent-blue sm:text-sm "
+                                            placeholder="أدخل الرمز" required>
+                                        <div class="flex items-center gap-2 w-full justify-center">
+                                            <div class="flex items-center bg-gray-100 rounded-lg h-11 px-4 min-w-[120px] justify-center text-gray-800 font-bold text-xl select-none tracking-wide border border-gray-200"
+                                                id="captcha_display">ABCD12</div>
+                                            <button type="button" id="refresh_captcha"
+                                                class="bg-blue-100 text-blue-600 p-3 rounded-lg hover:bg-blue-200 transition-colors duration-200 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-accent-blue focus:ring-opacity-50">
+                                                <i class="fas fa-sync-alt text-lg"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button"
+                                    class="w-full bg-accent-blue text-white font-bold py-3 px-4 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 animate-fade-in-up delay-400">تسجيل/تسجيل
+                                    الدخول</button>
+                            </div>
+                            <div class="mt-8 text-center w-full">
+                                <div class="relative flex justify-center text-sm mb-6">
+                                    <span class="px-3 bg-white text-gray-500 z-10">أو</span>
+                                    <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-gray-200"
+                                        aria-hidden="true"></div>
+                                </div>
+                                <button
+                                    class="w-full inline-flex items-center justify-center border border-gray-300 rounded-lg shadow-md py-2.5 px-4 bg-white text-gray-700 hover:bg-gray-50 transition-all duration-200 font-medium transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-blue focus:ring-opacity-50">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
+                                        alt="Google logo" class="w-5 h-5 ml-3">
+                                    تسجيل الدخول باستخدام جوجل
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </main>
-        </section>
 
     </main>
     <footer class="bg-gray-50 pt-20 pb-8">

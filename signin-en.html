@@ -54,37 +54,41 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <div class="flex items-center justify-between">
                 <a href="./index.html">
-                    <img src="./img/logo.webp" class="h-10" alt="Logo" />
+                    <img src="./img/logo.webp" class="h-14" alt="Logo" />
                 </a>
-                <nav class="hidden lg:flex items-center space-x-8">
+                <nav class="hidden lg:flex items-center gap-2">
                     <div class="relative group">
                         <button
                             class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
                             Academic Programs
-                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                            <i class="fa-solid fa-chevron-down h-4 w-4 mr-2"></i>
                         </button>
                         <div
                             class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
                             <div class="p-2">
-                                <a href="#"
+                                <a href="detail-course.html"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
                                     <i class="fa-solid fa-book-open h-4 w-4 text-accent-blue mr-2"></i>MBA
                                 </a>
-                                <a href="#"
+                                <a href="detail-course.html"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
                                     <i class="fa-solid fa-graduation-cap h-4 w-4 text-accent-blue mr-2"></i>PhD
                                 </a>
-                                <a href="#"
+                                <a href="detail-course.html"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-scroll-text h-4 w-4 text-accent-blue mr-2"></i>MSc
+                                    <i class="fa-solid fa-flask h-4 w-4 text-accent-blue mr-2"></i>MSc
                                 </a>
-                                <a href="#"
+                                <a href="detail-course.html"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
                                     <i class="fa-solid fa-award h-4 w-4 text-accent-blue mr-2"></i>DBA
                                 </a>
-                                <a href="#"
+                                <a href="detail-course.html"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
                                     <i class="fa-solid fa-book-open-reader h-4 w-4 text-accent-blue mr-2"></i>Bachelor
+                                </a>
+                                <a href="detail-course.html"
+                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                                    <i class="fa-solid fa-book h-4 w-4 text-accent-blue mr-2"></i>All Programs
                                 </a>
                             </div>
                         </div>
@@ -93,22 +97,19 @@
                         <button
                             class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
                             Courses
-                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                            <i class="fa-solid fa-chevron-down h-4 w-4 mr-2"></i>
                         </button>
                         <div
                             class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
                             <div class="p-2">
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-clipboard-check h-4 w-4 text-accent-blue mr-2"></i>PMP
+                                    <i class="fa-solid fa-clipboard-check h-4 w-4 text-accent-blue mr-2"></i>Free
+                                    Courses
                                 </a>
                                 <a href="#"
                                     class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-chart-bar h-4 w-4 text-accent-blue mr-2"></i>PMO
-                                </a>
-                                <a href="#"
-                                    class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                                    <i class="fa-solid fa-book-atlas h-4 w-4 text-accent-blue mr-2"></i>Other Courses
+                                    <i class="fa-solid fa-chart-bar h-4 w-4 text-accent-blue mr-2"></i>Seminar
                                 </a>
                             </div>
                         </div>
@@ -117,7 +118,7 @@
                         <button
                             class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors">
                             More
-                            <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                            <i class="fa-solid fa-chevron-down h-4 w-4 mr-2"></i>
                         </button>
                         <div
                             class="absolute left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 bg-white shadow-lg rounded-md overflow-hidden">
@@ -158,11 +159,10 @@
                     <button class="p-2 hover:bg-gray-100 rounded-full" aria-label="Switch to Arabic">
                         <i class="fa-solid fa-globe h-5 w-5 text-primary"></i>
                     </button>
-                    <a href="signin.html"
-                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10">Sign
-                        In</a>
-                    <a href="register.html"
-                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md">Register</a>
+                    <button
+                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10">Login</button>
+                    <button
+                        class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md">Register</button>
                 </div>
                 <div id="mobile-menu-button" class="lg:hidden">
                     <button id="mobile-menu-toggle" class="text-primary p-2" aria-label="Toggle Menu">
@@ -172,6 +172,7 @@
             </div>
         </div>
     </header>
+
 
     <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden lg:hidden"></div>
 
@@ -183,14 +184,14 @@
                     <i class="fa-solid fa-times h-6 w-6"></i>
                 </button>
             </div>
-            <nav class="flex flex-col space-y-4 mt-4">
+            <nav class="flex flex-col">
                 <div class="relative">
                     <button id="academic-programs-mobile-toggle"
                         class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
                         Academic Programs
-                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                        <i class="fa-solid fa-chevron-down h-4 w-4 mr-2"></i>
                     </button>
-                    <div id="academic-programs-mobile-dropdown" class="pl-4 hidden">
+                    <div id="academic-programs-mobile-dropdown" class=" hidden">
                         <a href="#"
                             class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
                             <i class="fa-solid fa-book-open h-4 w-4 text-accent-blue mr-2"></i>MBA
@@ -201,7 +202,7 @@
                         </a>
                         <a href="#"
                             class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
-                            <i class="fa-solid fa-scroll-text h-4 w-4 text-accent-blue mr-2"></i>MSc
+                            <i class="fa-solid fa-flask h-4 w-4 text-accent-blue mr-2"></i>MSc
                         </a>
                         <a href="#"
                             class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
@@ -211,6 +212,10 @@
                             class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
                             <i class="fa-solid fa-book-open-reader h-4 w-4 text-accent-blue mr-2"></i>Bachelor
                         </a>
+                        <a href="detail-course.html"
+                            class="flex items-center px-4 py-2 text-sm text-primary hover:bg-gray-100 rounded-md">
+                            <i class="fa-solid fa-book h-4 w-4 text-accent-blue mr-2"></i>Academic Programs
+                        </a>
                     </div>
                 </div>
 
@@ -218,7 +223,7 @@
                     <button id="courses-mobile-toggle"
                         class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
                         Courses
-                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                        <i class="fa-solid fa-chevron-down h-4 w-4 mr-2"></i>
                     </button>
                     <div id="courses-mobile-dropdown" class="pl-4 hidden">
                         <a href="#"
@@ -240,7 +245,7 @@
                     <button id="more-mobile-toggle"
                         class="flex items-center justify-between w-full text-primary hover:text-accent-blue font-medium transition-colors py-2">
                         More
-                        <i class="fa-solid fa-chevron-down h-4 w-4 ml-1"></i>
+                        <i class="fa-solid fa-chevron-down h-4 w-4 mr-2"></i>
                     </button>
                     <div id="more-mobile-dropdown" class="pl-4 hidden">
                         <a href="blog.html"
@@ -261,6 +266,7 @@
                         </a>
                     </div>
                 </div>
+
                 <a href="/contact.html"
                     class="flex items-center text-primary hover:text-accent-blue font-medium transition-colors py-2">
                     <i class="fa-solid fa-phone h-4 w-4 text-accent-blue mr-2"></i>Contact Us
@@ -270,13 +276,14 @@
                 </button>
                 <button class="flex items-center text-primary hover:bg-gray-100 rounded-md py-2"
                     aria-label="Switch to Arabic">
-                    <i class="fa-solid fa-globe h-5 w-5 text-primary mr-2"></i>Switch to Arabic
+                    <i class="fa-solid fa-globe h-5 w-5 text-primary mr-2"></i>Switch to English
                 </button>
                 <a href="signin.html"
                     class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm border border-accent-blue text-accent-blue hover:bg-accent-blue/10 w-full mt-4">Sign
                     In</a>
                 <a href="register.html"
-                    class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md w-full">Register</a>
+                    class="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50 px-4 py-2 text-sm bg-accent-blue text-white hover:bg-accent-blue/90 shadow-md w-full">Register
+                </a>
             </nav>
         </div>
     </div>

@@ -303,7 +303,7 @@
                     معلومات الاتصال المباشرة.</p>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 md:mb-16">
-                <div class=" p-6 sm:p-8 h-full flex flex-col justify-between ">
+                <div class="order-2 md:order-1 p-6 sm:p-8 h-full flex flex-col justify-between ">
                     <div>
                         <h3 class="text-2xl font-bold text-primary mb-6">تفاصيل الاتصال</h3>
                         <p class="text-gray-600 mb-8">ابحث عنا وتواصل معنا عبر قنوات الاتصال الرئيسية لدينا.</p>
@@ -413,7 +413,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" p-6 sm:p-8  text-right">
+                <div class="order-1 md:order-2 p-6 sm:p-8  text-right">
                     <h3 class="text-2xl font-bold text-primary mb-6">أرسل لنا رسالة</h3>
                     <form class="space-y-4">
                         <div><label for="name" class="block text-gray-700 text-sm font-medium mb-1">اسمك</label><input
@@ -430,6 +430,14 @@
                                 id="subject" placeholder="أدخل موضوع رسالتك"
                                 class="w-full p-3 border border-gray-300 rounded-md focus:ring-accent-blue focus:border-accent-blue text-right"
                                 required="" name="subject" value=""></div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 text-sm font-medium mb-1">
+                                رقم الهاتف
+                            </label>
+                            <input type="text" id="phone" placeholder="أدخل رقم هاتفك"
+                                class="w-full p-3 border border-gray-300 rounded-md focus:ring-accent-blue focus:border-accent-blue text-right"
+                                required name="phone" value="" />
+                        </div>
                         <div><label for="message"
                                 class="block text-gray-700 text-sm font-medium mb-1">رسالتك</label><textarea
                                 id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..."

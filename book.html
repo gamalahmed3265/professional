@@ -294,57 +294,56 @@
     </div>
 
 
-
-
-
     <main class="py-8 bg-gray-100">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-extrabold text-primary mb-10 text-center">البرامج الأكاديمية</h1>
+            <h1 class="text-4xl font-extrabold text-primary mb-10 text-center">مكتبة الكتب</h1>
+
+            <!-- <section class="mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-6 text-center">فيديو مميز</h2>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                    <div class="aspect-video bg-gray-200 flex items-center justify-center rounded-md overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-primary mb-2">عنوان الكتب المميز هنا</h3>
+                        <p class="text-gray-600">وصف موجز الكتبالمميز، يسلط الضوء على محتواه أو أهميته.</p>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- <hr class="my-10 border-gray-300"> -->
 
             <section class="mb-12">
-                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <!-- <h2 class="text-3xl font-bold text-primary mb-6 text-center">تصفح حسب الفئة</h2> -->
+                <div class="flex flex-wrap justify-center gap-4">
                     <button
-                        class="category-button px-6 py-3 bg-accent-blue text-white rounded-full shadow-md hover:bg-accent-blue/90 transition-colors"
-                        data-category="all">
+                        class="px-6 py-3 bg-accent-blue text-white rounded-full shadow-md hover:bg-accent-blue/90 transition-colors">
                         الكل
                     </button>
                     <button
-                        class="category-button px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors"
-                        data-category="academic-programs">
-                        البرامج الأكاديمية
-                    </button>
-
-                    <button
-                        class="category-button px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors"
-                        data-category="mba">
-                        MBA
+                        class="px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors">
+                        برامج أكاديمية
                     </button>
                     <button
-                        class="category-button px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors"
-                        data-category="phd">
-                        PhD
+                        class="px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors">
+                        الدورات التدريبية
                     </button>
                     <button
-                        class="category-button px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors"
-                        data-category="msc">
-                        MSc
+                        class="px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors">
+                        نصائح مهنية
                     </button>
                     <button
-                        class="category-button px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors"
-                        data-category="dba">
-                        DBA
+                        class="px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors">
+                        قصص نجاح
                     </button>
-                    <button
-                        class="category-button px-6 py-3 bg-white text-primary rounded-full shadow-md border border-gray-300 hover:bg-gray-50 transition-colors"
-                        data-category="bachelor">
-                        Bachelor
-                    </button>
-
                 </div>
 
                 <div class="mt-8 flex justify-center">
                     <div class="relative w-full max-w-lg">
-                        <input type="text" placeholder="ابحث عن البرامج الأكاديمية..."
+                        <input type="text" placeholder="ابحث عن الكتاب..."
                             class="w-full py-3 px-5 pr-12 border border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-accent-blue focus:border-transparent text-right"
                             style="padding-right: 3rem;">
                         <i
@@ -356,22 +355,18 @@
             <hr class="my-10 border-gray-300">
 
             <section>
-                <!-- <h2 class="text-3xl font-bold text-primary mb-6 text-center">أحدث الفيديوهات</h2> -->
+                <h2 class="text-3xl font-bold text-primary mb-6 text-center">أحدث الكتب</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="video-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-                        data-category="academic-programs mba">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                         <div class="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
                             <img src="https://via.placeholder.com/640x360" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-grow">
-                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الفيديو الأول: رؤية حول برنامج MBA
-                            </h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                وصف مختصر للفيديو الأول. هذا النص يصف محتوى الفيديو بإيجاز ويجذب المشاهد.
-                            </p>
+                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الكتب الأول</h3>
+                            <p class="text-gray-600 text-sm mb-4">وصف مختصر الكتب الأول. هذا النص يصف محتوى الكتب
+                                بإيجاز ويجذب المشاهد.</p>
                             <span class="text-gray-500 text-xs">نُشر في: 2025/06/22</span>
-                            <span class="text-gray-500 text-xs float-left">الفئة: برامج أكاديمية، MBA</span>
                         </div>
                         <div class="p-5 pt-0">
                             <a href="#"
@@ -380,20 +375,16 @@
                         </div>
                     </div>
 
-                    <div class="video-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-                        data-category="courses pmp">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                         <div class="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
                             <img src="https://via.placeholder.com/640x360" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-grow">
-                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الفيديو الثاني: أساسيات إدارة
-                                المشاريع (PMP)</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                وصف مختصر للفيديو الثاني. هذا النص يصف محتوى الفيديو بإيجاز ويجذب المشاهد.
-                            </p>
+                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الكتب الثاني</h3>
+                            <p class="text-gray-600 text-sm mb-4">وصف مختصر الكتب الثاني. هذا النص يصف محتوى الكتب
+                                بإيجاز ويجذب المشاهد.</p>
                             <span class="text-gray-500 text-xs">نُشر في: 2025/06/20</span>
-                            <span class="text-gray-500 text-xs float-left">الفئة: الدورات التدريبية، PMP</span>
                         </div>
                         <div class="p-5 pt-0">
                             <a href="#"
@@ -402,20 +393,16 @@
                         </div>
                     </div>
 
-                    <div class="video-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-                        data-category="career-tips">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                         <div class="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
                             <img src="https://via.placeholder.com/640x360" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-grow">
-                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الفيديو الثالث: كيف تنجح في
-                                المقابلات الشخصية</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                وصف مختصر للفيديو الثالث. هذا النص يصف محتوى الفيديو بإيجاز ويجذب المشاهد.
-                            </p>
+                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الكتب الثالث</h3>
+                            <p class="text-gray-600 text-sm mb-4">وصف مختصر الكتب الثالث. هذا النص يصف محتوى الكتب
+                                بإيجاز ويجذب المشاهد.</p>
                             <span class="text-gray-500 text-xs">نُشر في: 2025/06/18</span>
-                            <span class="text-gray-500 text-xs float-left">الفئة: نصائح مهنية</span>
                         </div>
                         <div class="p-5 pt-0">
                             <a href="#"
@@ -424,20 +411,16 @@
                         </div>
                     </div>
 
-                    <div class="video-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-                        data-category="academic-programs phd">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                         <div class="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
                             <img src="https://via.placeholder.com/640x360" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-grow">
-                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الفيديو الرابع: مسار الدكتوراه
-                                (PhD) في جامعتنا</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                وصف مختصر للفيديو الرابع. هذا النص يصف محتوى الفيديو بإيجاز ويجذب المشاهد.
-                            </p>
+                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الكتب الرابع</h3>
+                            <p class="text-gray-600 text-sm mb-4">وصف مختصر الكتب الرابع. هذا النص يصف محتوى الكتب
+                                بإيجاز ويجذب المشاهد.</p>
                             <span class="text-gray-500 text-xs">نُشر في: 2025/06/15</span>
-                            <span class="text-gray-500 text-xs float-left">الفئة: برامج أكاديمية، PhD</span>
                         </div>
                         <div class="p-5 pt-0">
                             <a href="#"
@@ -446,20 +429,16 @@
                         </div>
                     </div>
 
-                    <div class="video-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-                        data-category="success-stories">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                         <div class="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
                             <img src="https://via.placeholder.com/640x360" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-grow">
-                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الفيديو الخامس: قصة نجاح خريجتنا
-                                ريم</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                وصف مختصر للفيديو الخامس. هذا النص يصف محتوى الفيديو بإيجاز ويجذب المشاهد.
-                            </p>
+                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الكتب الخامس</h3>
+                            <p class="text-gray-600 text-sm mb-4">وصف مختصر الكتب الخامس. هذا النص يصف محتوى الكتب
+                                بإيجاز ويجذب المشاهد.</p>
                             <span class="text-gray-500 text-xs">نُشر في: 2025/06/12</span>
-                            <span class="text-gray-500 text-xs float-left">الفئة: قصص نجاح</span>
                         </div>
                         <div class="p-5 pt-0">
                             <a href="#"
@@ -468,21 +447,16 @@
                         </div>
                     </div>
 
-                    <div class="video-card bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
-                        data-category="courses other-courses">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                         <div class="aspect-video bg-gray-200 flex items-center justify-center overflow-hidden">
                             <img src="https://via.placeholder.com/640x360" alt="Video Thumbnail"
                                 class="w-full h-full object-cover">
                         </div>
                         <div class="p-5 flex-grow">
-                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الفيديو السادس: استكشاف الدورات
-                                الأخرى</h3>
-                            <p class="text-gray-600 text-sm mb-4">
-                                وصف مختصر للفيديو السادس. هذا النص يصف محتوى الفيديو بإيجاز ويجذب المشاهد.
-                            </p>
+                            <h3 class="text-xl font-semibold text-primary mb-2">عنوان الكتب السادس</h3>
+                            <p class="text-gray-600 text-sm mb-4">وصف مختصر الكتب السادس. هذا النص يصف محتوى الكتب
+                                بإيجاز ويجذب المشاهد.</p>
                             <span class="text-gray-500 text-xs">نُشر في: 2025/06/10</span>
-                            <span class="text-gray-500 text-xs float-left">الفئة: الدورات التدريبية، الدورات
-                                الاخري</span>
                         </div>
                         <div class="p-5 pt-0">
                             <a href="#"
@@ -507,41 +481,6 @@
             </section>
         </div>
     </main>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const categoryButtons = document.querySelectorAll('.category-button');
-            const videoCards = document.querySelectorAll('.video-card');
-
-            categoryButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Remove active state from all buttons
-                    categoryButtons.forEach(btn => {
-                        btn.classList.remove('bg-accent-blue', 'text-white');
-                        btn.classList.add('bg-white', 'text-primary', 'border-gray-300');
-                    });
-
-                    // Add active state to clicked button
-                    button.classList.remove('bg-white', 'text-primary', 'border-gray-300');
-                    button.classList.add('bg-accent-blue', 'text-white');
-
-                    const selectedCategory = button.dataset.category;
-
-                    videoCards.forEach(card => {
-                        const cardCategories = card.dataset.category.split(' ');
-                        if (selectedCategory === 'all' || cardCategories.includes(selectedCategory)) {
-                            card.style.display = 'flex'; // Show the card
-                        } else {
-                            card.style.display = 'none'; // Hide the card
-                        }
-                    });
-                });
-            });
-
-            // Initial filter to show all videos
-            document.querySelector('.category-button[data-category="all"]').click();
-        });
-    </script>
     <div class="fixed bottom-6 right-6 z-50">
         <a href="https://wa.me/+966541323774" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center bg-green-500 text-white p-3 rounded-full shadow-lg 
                   hover:bg-green-600 transition duration-300 ease-in-out">
